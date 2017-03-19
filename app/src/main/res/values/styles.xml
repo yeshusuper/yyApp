@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="ActivityTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+
+    <style name="MainTopNavItem">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/font_33</item>
+        <item name="android:textColor">@color/white_ffffff</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainLeftNavItem">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_33</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    
+    <style name="MainRightItemContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainRightItemImage">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">74dp</item>
+    </style>
+
+    <style name="MainRightItemText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_30</item>
+    </style>
+
+    <style name="MainBottomItemContainer">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MainBottomItemImage">
+        <item name="android:layout_width">21dp</item>
+        <item name="android:layout_height">21dp</item>
+    </style>
+    <style name="MainBottomItemText">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:textSize">@dimen/font_30</item>
+    </style>
+
+    <style name="LineX">
+        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="LineY">
+        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
+
+</resources>

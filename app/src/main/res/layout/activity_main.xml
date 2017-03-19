@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2f2f2">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:paddingLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/red_e82c1d">
+        
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginRight="26dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_logo"
+            android:layout_width="33dp"
+            android:layout_height="33dp" />
+
+        <LinearLayout
+            android:background="@drawable/shape_main_top_nav"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:background="@drawable/shape_main_top_nav_left_patch"
+                android:textColor="@color/red_e82c1d"
+                style="@style/MainTopNavItem"
+                android:text="面料"/>
+            <TextView style="@style/LineY" />
+            <CheckBox
+                style="@style/MainTopNavItem"
+                android:text="辅料" />
+            <TextView style="@style/LineY" />
+            <CheckBox
+                style="@style/MainTopNavItem"
+                android:text="新品" />
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout style="@style/MainBottomItemContainer">
+            <ImageView style="@style/MainBottomItemImage"
+                android:src="@drawable/main_bottom_nav_home_cur" />
+            <TextView style="@style/MainBottomItemText"
+                android:textColor="@color/red_e82c1d"
+                android:text="首页"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainBottomItemContainer">
+            <ImageView style="@style/MainBottomItemImage"
+                android:src="@drawable/main_bottom_nav_caigou_nor" />
+            <TextView style="@style/MainBottomItemText"
+                android:text="采购"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainBottomItemContainer">
+            <ImageView style="@style/MainBottomItemImage"
+                android:src="@drawable/main_bottom_nav_kf_nor" />
+            <TextView style="@style/MainBottomItemText"
+                android:text="资讯客服"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainBottomItemContainer">
+            <ImageView style="@style/MainBottomItemImage"
+                android:src="@drawable/main_bottom_nav_my_nor" />
+            <TextView style="@style/MainBottomItemText"
+                android:text="我的壹衣"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/sv_left_nav"
+        android:layout_below="@id/title_bar"
+        android:layout_above="@id/ll_bottom_nav"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff"
+        android:scrollbars="none">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_f2f2f2">
+
+                <TextView
+                    android:id="@+id/tv_left_nav_item"
+                    style="@style/MainLeftNavItem"
+                    android:text="花边" />
+
+                <TextView
+                    android:background="@color/red_e82c1d"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_alignTop="@id/tv_left_nav_item"
+                    android:layout_alignBottom="@id/tv_left_nav_item"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="拉链" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="纽扣" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="饰品" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="五金" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="织带" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="绣章" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="手工制品" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="服装配件" />
+            <TextView
+                style="@style/MainLeftNavItem"
+                android:text="花饰" />
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <ScrollView
+        android:layout_toRightOf="@id/sv_left_nav"
+        android:layout_above="@id/ll_bottom_nav"
+        android:layout_below="@id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_1" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="编制花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_2" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="钩编花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_3" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="经编花边"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_4" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="刺绣花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_5" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="手工钩针花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_6" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="其他花边"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_7" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="爱尔兰花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_8" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="手工钩针花边"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_9" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="经编弹力花边"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/MainRightItemContainer">
+
+                    <ImageView style="@style/MainRightItemImage"
+                        android:src="@drawable/main_img_10" />
+
+                    <TextView style="@style/MainRightItemText"
+                        android:text="其他花边"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
