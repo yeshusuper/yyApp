@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="27dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_login_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="@dimen/font_102"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_e82c1d"
+                android:text="欢迎来到壹衣"/>
+
+            <EditText
+                android:layout_marginTop="47dp"
+                android:background="@drawable/shape_input"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:hint="请输入手机号"
+                android:textColorHint="@color/gray_cccccc"
+                android:textSize="@dimen/font_33"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:background="@drawable/shape_input"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="请输入验证码"
+                    android:textColorHint="@color/gray_cccccc"
+                    android:textSize="@dimen/font_33"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    />
+
+                <TextView style="@style/LineY_dddddd" />
+
+                <Button
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="获取验证码"
+                    android:background="@color/transparent"
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/shape_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/white_ffffff"
+                android:text="登陆/注册"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:textSize="@dimen/font_102"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_e82c1d"
+                android:text="怎么称呼您"/>
+
+            <EditText
+                android:layout_marginTop="47dp"
+                android:background="@drawable/shape_input"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:hint="请输入您的姓名"
+                android:textColorHint="@color/gray_cccccc"
+                android:textSize="@dimen/font_33"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/shape_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/white_ffffff"
+                android:text="确定"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

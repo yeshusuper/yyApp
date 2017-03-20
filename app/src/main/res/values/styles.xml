@@ -16,7 +16,7 @@
     <style name="MainTopNavItem">
         <item name="android:button">@null</item>
         <item name="android:textSize">@dimen/font_33</item>
-        <item name="android:textColor">@color/white_ffffff</item>
+        <item name="android:textColor">@color/red_e82c1d</item>
         <item name="android:layout_width">90dp</item>
         <item name="android:layout_height">33dp</item>
         <item name="android:gravity">center</item>
@@ -72,14 +72,26 @@
     </style>
 
     <style name="LineX">
-        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:background">@color/red_e82c1d</item>
         <item name="android:layout_height">1px</item>
         <item name="android:layout_width">match_parent</item>
     </style>
 
 
     <style name="LineY">
-        <item name="android:background">@color/white_ffffff</item>
+        <item name="android:background">@color/red_e82c1d</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
+
+    <style name="LineX_b2b2b2">
+        <item name="android:background">@color/gray_b2b2b2</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LineY_dddddd">
+        <item name="android:background">@color/gray_dddddd</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">1px</item>
     </style>
