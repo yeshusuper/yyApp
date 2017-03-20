@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         final View loginContainer = findViewById(R.id.ll_login_container);
         final View infoContainer = findViewById(R.id.ll_info_container);
