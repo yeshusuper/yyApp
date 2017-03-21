@@ -44,17 +44,25 @@
     </style>
     
     <style name="MainRightItemContainer">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.29</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
         <item name="android:background">@color/white_ffffff</item>
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="MainRightItemGap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.032</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
     <style name="MainRightItemImage">
-        <item name="android:layout_width">90dp</item>
-        <item name="android:layout_height">74dp</item>
+        <item name="android:layout_width">match_parent</item><!--90dp-->
+        <item name="android:layout_height">wrap_content</item><!--74dp-->
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:adjustViewBounds">true</item>
     </style>
 
     <style name="MainRightItemText">
