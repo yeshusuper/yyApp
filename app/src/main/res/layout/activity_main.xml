@@ -8,6 +8,7 @@
     <RelativeLayout
         android:id="@+id/title_bar"
         android:paddingLeft="18dp"
+        android:paddingRight="18dp"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:background="@color/white_ffffff">
@@ -24,20 +25,22 @@
             android:background="@drawable/shape_main_top_nav"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/iv_logo"
+            android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <CheckBox
-                android:background="@drawable/shape_main_top_nav_left_patch"
-                android:textColor="@color/white_ffffff"
+                android:id="@+id/cb_mianliao"
                 style="@style/MainTopNavItem"
                 android:text="面料"/>
             <TextView style="@style/LineY" />
             <CheckBox
+                android:id="@+id/cb_fuliao"
                 style="@style/MainTopNavItem"
                 android:text="辅料" />
             <TextView style="@style/LineY" />
             <CheckBox
+                android:id="@+id/cb_new"
                 style="@style/MainTopNavItem"
                 android:text="新品" />
 

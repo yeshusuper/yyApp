@@ -3,8 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="font_27">9sp</dimen>
     <dimen name="font_30">10sp</dimen>
     <dimen name="font_33">11sp</dimen>
     <dimen name="font_36">12sp</dimen>
+    <dimen name="font_45">15dp</dimen>
     <dimen name="font_102">34dp</dimen>
 </resources>

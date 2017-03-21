@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2f2f2">
+    
+    <LinearLayout
+        android:background="@color/white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_555555"
+            android:textSize="@dimen/font_45"
+            android:text="选择分类"
+            />
+        <ImageView style="@style/IconSelect" />
+    </LinearLayout>
+
+    <TextView style="@style/LineX_b2b2b2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/NewProductItemContainer">
+                <ImageView style="@style/NewProductItemImg"
+                    android:src="@drawable/new_product_img_1"/>
+                <LinearLayout style="@style/NewProductItemTextContainer">
+                    <TextView style="@style/NewProductItemText1"
+                        android:text="壹衣辅料大卖场" />
+                    <TextView style="@style/NewProductItemText2"
+                        android:text="辅料/纽扣/塑料扣" />
+                    <TextView style="@style/NewProductItemText3"
+                        android:text="复古塑料纽扣..."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/NewProductItemContainer">
+                <ImageView style="@style/NewProductItemImg"
+                    android:src="@drawable/new_product_img_2"/>
+                <LinearLayout style="@style/NewProductItemTextContainer">
+                    <TextView style="@style/NewProductItemText1"
+                        android:text="壹衣辅料大卖场" />
+                    <TextView style="@style/NewProductItemText2"
+                        android:text="辅料/纽扣/塑料扣" />
+                    <TextView style="@style/NewProductItemText3"
+                        android:text="复古塑料纽扣..."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/NewProductItemContainer">
+                <ImageView style="@style/NewProductItemImg"
+                    android:src="@drawable/new_product_img_3"/>
+                <LinearLayout style="@style/NewProductItemTextContainer">
+                    <TextView style="@style/NewProductItemText1"
+                        android:text="壹衣辅料大卖场" />
+                    <TextView style="@style/NewProductItemText2"
+                        android:text="辅料/纽扣/塑料扣" />
+                    <TextView style="@style/NewProductItemText3"
+                        android:text="复古塑料纽扣..."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/NewProductItemContainer">
+                <ImageView style="@style/NewProductItemImg"
+                    android:src="@drawable/new_product_img_4"/>
+                <LinearLayout style="@style/NewProductItemTextContainer">
+                    <TextView style="@style/NewProductItemText1"
+                        android:text="壹衣辅料大卖场" />
+                    <TextView style="@style/NewProductItemText2"
+                        android:text="辅料/纽扣/塑料扣" />
+                    <TextView style="@style/NewProductItemText3"
+                        android:text="复古塑料纽扣..."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/NewProductItemContainer">
+                <ImageView style="@style/NewProductItemImg"
+                    android:src="@drawable/new_product_img_5"/>
+                <LinearLayout style="@style/NewProductItemTextContainer">
+                    <TextView style="@style/NewProductItemText1"
+                        android:text="壹衣辅料大卖场" />
+                    <TextView style="@style/NewProductItemText2"
+                        android:text="辅料/纽扣/塑料扣" />
+                    <TextView style="@style/NewProductItemText3"
+                        android:text="复古塑料纽扣..."/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

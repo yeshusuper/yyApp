@@ -12,14 +12,27 @@
         <item name="android:windowIsTranslucent">false</item>
     </style>
 
-
     <style name="MainTopNavItem">
         <item name="android:button">@null</item>
-        <item name="android:textSize">@dimen/font_33</item>
+        <item name="android:textSize">@dimen/font_36</item>
         <item name="android:textColor">@color/red_e82c1d</item>
-        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">33dp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainTopNavItemCurrent" parent="MainTopNavItem" >
+        <item name="android:textColor">@color/white_ffffff</item>
+        <item name="android:background">@color/red_e82c1d</item>
+    </style>
+
+    <style name="MainTopNavItemCurrentLeft" parent="MainTopNavItemCurrent">
+        <item name="android:background">@drawable/shape_main_top_nav_left_patch</item>
+    </style>
+
+    <style name="MainTopNavItemCurrentRight" parent="MainTopNavItemCurrent">
+        <item name="android:background">@drawable/shape_main_top_nav_right_patch</item>
     </style>
 
     <style name="MainLeftNavItem">
@@ -71,12 +84,59 @@
         <item name="android:textSize">@dimen/font_30</item>
     </style>
 
+    <style name="NewProductItemContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+    </style>
+    <style name="NewProductItemImg">
+        <item name="android:layout_width">106dp</item>
+        <item name="android:layout_height">72dp</item>
+    </style>
+    <style name="NewProductItemTextContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="NewProductItemText1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_45</item>
+    </style>
+    <style name="NewProductItemText2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/font_36</item>
+    </style>
+    <style name="NewProductItemText3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textColor">@color/gray_999999</item>
+        <item name="android:textSize">@dimen/font_30</item>
+    </style>
+
     <style name="LineX">
         <item name="android:background">@color/red_e82c1d</item>
         <item name="android:layout_height">1px</item>
         <item name="android:layout_width">match_parent</item>
     </style>
 
+    <style name="IconSelect">
+        <item name="android:src">@drawable/icon_select</item>
+        <item name="android:layout_width">7dp</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+    </style>
 
     <style name="LineY">
         <item name="android:background">@color/red_e82c1d</item>
