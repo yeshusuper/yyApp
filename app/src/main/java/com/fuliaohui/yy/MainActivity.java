@@ -5,6 +5,7 @@ import android.support.annotation.StyleRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
@@ -58,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
         cbNew.setOnCheckedChangeListener(topCheckedChangeListener);
 
         cbMianLiao.setChecked(true);
+
+        final View kfTip = findViewById(R.id.rl_kf_tip);
+        findViewById(R.id.tv_kf_tip_close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                kfTip.setVisibility(View.GONE);
+            }
+        });
     }
 
     private void setCheckBoxChecked(CheckBox checkBox, Fragment fragment, boolean isChecked, @StyleRes int currentStyleId, int bgId){

@@ -97,4 +97,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kf_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kf_tips_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/tv_kf_tip_close"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 </RelativeLayout>
