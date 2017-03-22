@@ -1,9 +1,12 @@
 package com.fuliaohui.yy.widget;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
+
 import com.fuliaohui.yy.R;
 
 /**
@@ -11,6 +14,9 @@ import com.fuliaohui.yy.R;
  */
 
 public class TitleBar extends FrameLayout {
+    private TextView tvTitle;
+    private Activity activity;
+
     public TitleBar(Context context) {
         super(context);
         init(context);
@@ -28,5 +34,21 @@ public class TitleBar extends FrameLayout {
 
     private void init(Context context){
         View view = inflate(context, R.layout.widget_title_bar, this);
+        tvTitle = (TextView) view.findViewById(R.id.tv_text);
+        view.findViewById(R.id.ll_back).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(activity != null)
+                    activity.finish();
+            }
+        });
+    }
+
+    public void setTitle(CharSequence title){
+        tvTitle.setText(title);
+    }
+
+    public void setActivity(Activity activity) {
+        this.activity = activity;
     }
 }

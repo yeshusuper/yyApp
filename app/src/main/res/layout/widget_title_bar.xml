@@ -4,11 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:background="@color/red_e82c1d"
+    <LinearLayout
+        android:background="@color/white_ffffff"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="52dp">
 
-    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/back"
+                android:layout_width="13dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/font_60"
+            android:textColor="@color/black_555555"
+            android:textStyle="bold"
+            tools:text="title"/>
+
+    </LinearLayout>
 
 </FrameLayout>

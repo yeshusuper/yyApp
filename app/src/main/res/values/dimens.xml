@@ -8,5 +8,6 @@
     <dimen name="font_33">11sp</dimen>
     <dimen name="font_36">12sp</dimen>
     <dimen name="font_45">15dp</dimen>
+    <dimen name="font_60">20dp</dimen>
     <dimen name="font_102">34dp</dimen>
 </resources>

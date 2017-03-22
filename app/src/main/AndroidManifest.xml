@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
-            android:theme="@style/ActivityTheme">
+            android:theme="@style/ActivityTheme"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name=".NewProductDetailActivity"
+            android:theme="@style/ActivityTheme"
+            android:launchMode="singleTop">
         </activity>
 
     </application>

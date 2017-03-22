@@ -32,7 +32,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout style="@style/NewProductItemContainer">
+            <LinearLayout
+                android:id="@+id/ll_product_1"
+                style="@style/NewProductItemContainer">
                 <ImageView style="@style/NewProductItemImg"
                     android:src="@drawable/new_product_img_1"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
@@ -45,7 +47,9 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/NewProductItemContainer">
+            <LinearLayout
+                android:id="@+id/ll_product_2"
+                style="@style/NewProductItemContainer">
                 <ImageView style="@style/NewProductItemImg"
                     android:src="@drawable/new_product_img_2"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
@@ -58,7 +62,9 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/NewProductItemContainer">
+            <LinearLayout
+                android:id="@+id/ll_product_3"
+                style="@style/NewProductItemContainer">
                 <ImageView style="@style/NewProductItemImg"
                     android:src="@drawable/new_product_img_3"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
@@ -71,7 +77,9 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/NewProductItemContainer">
+            <LinearLayout
+                android:id="@+id/ll_product_4"
+                style="@style/NewProductItemContainer">
                 <ImageView style="@style/NewProductItemImg"
                     android:src="@drawable/new_product_img_4"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
@@ -84,7 +92,9 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout style="@style/NewProductItemContainer">
+            <LinearLayout
+                android:id="@+id/ll_product_5"
+                style="@style/NewProductItemContainer">
                 <ImageView style="@style/NewProductItemImg"
                     android:src="@drawable/new_product_img_5"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">

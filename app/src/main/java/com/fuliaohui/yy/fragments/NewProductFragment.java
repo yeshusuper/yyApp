@@ -1,5 +1,6 @@
 package com.fuliaohui.yy.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yy.NewProductDetailActivity;
 import com.fuliaohui.yy.R;
 
 /**
@@ -28,6 +30,17 @@ public class NewProductFragment extends Fragment {
                         fragment.show(getChildFragmentManager(), name);
                     }
                 });
+        final View.OnClickListener productClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getContext().startActivity(new Intent(getContext(), NewProductDetailActivity.class));
+            }
+        };
+        view.findViewById(R.id.ll_product_1).setOnClickListener(productClickListener);
+        view.findViewById(R.id.ll_product_2).setOnClickListener(productClickListener);
+        view.findViewById(R.id.ll_product_3).setOnClickListener(productClickListener);
+        view.findViewById(R.id.ll_product_4).setOnClickListener(productClickListener);
+        view.findViewById(R.id.ll_product_5).setOnClickListener(productClickListener);
         return view;
     }
 }

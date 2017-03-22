@@ -168,6 +168,24 @@
         <item name="android:layout_width">0dp</item>
     </style>
 
+    <style name="NewProductDetailInfoLine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">19dp</item>
+    </style>
+    <style name="NewProductDetailInfoTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:textColor">@color/gray_999999</item>
+    </style>
+    <style name="NewProductDetailInfoContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:textColor">@color/black_555555</item>
+    </style>
+
     <style name="LineX">
         <item name="android:background">@color/red_e82c1d</item>
         <item name="android:layout_height">1px</item>
