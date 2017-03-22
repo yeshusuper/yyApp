@@ -12,6 +12,12 @@
         <item name="android:windowIsTranslucent">false</item>
     </style>
 
+
+    <style name="DialogTheme" parent="ActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
     <style name="MainTopNavItem">
         <item name="android:button">@null</item>
         <item name="android:textSize">@dimen/font_36</item>
@@ -42,12 +48,18 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
     </style>
-    
+
+    <style name="MainRightItemLineContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
     <style name="MainRightItemContainer">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">0.29</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">10dp</item>
         <item name="android:background">@color/white_ffffff</item>
         <item name="android:orientation">vertical</item>
     </style>
@@ -131,6 +143,29 @@
         <item name="android:gravity">bottom</item>
         <item name="android:textColor">@color/gray_999999</item>
         <item name="android:textSize">@dimen/font_30</item>
+    </style>
+    <style name="RightClassSelectItemLine">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="RightClassSelectItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selecter_right_class_select</item>
+    </style>
+
+    <style name="RightClassSelectItemGrp">
+        <item name="android:layout_weight">0.26</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">0dp</item>
     </style>
 
     <style name="LineX">

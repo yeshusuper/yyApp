@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_bg"
+        android:layout_width="43dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent60">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:text="选择类型"/>
+
+            <TextView style="@style/LineX_b2b2b2"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout style="@style/RightClassSelectItemLine">
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:checked="true"
+                        android:textColor="@color/red_e82c1d"
+                        android:text="花边" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="拉链" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="纽扣" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/RightClassSelectItemLine">
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="饰品" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="五金" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="织带" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/RightClassSelectItemLine">
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="绣章" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="手工制品" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="服装配饰" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/RightClassSelectItemLine">
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:text="花饰" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:background="@color/transparent"/>
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                    <CheckBox style="@style/RightClassSelectItem"
+                        android:background="@color/transparent" />
+
+                    <TextView style="@style/RightClassSelectItemGrp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
