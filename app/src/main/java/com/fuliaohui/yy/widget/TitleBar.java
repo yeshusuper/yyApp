@@ -16,6 +16,7 @@ import com.fuliaohui.yy.R;
 public class TitleBar extends FrameLayout {
     private TextView tvTitle;
     private Activity activity;
+    private View llBack;
 
     public TitleBar(Context context) {
         super(context);
@@ -35,7 +36,8 @@ public class TitleBar extends FrameLayout {
     private void init(Context context){
         View view = inflate(context, R.layout.widget_title_bar, this);
         tvTitle = (TextView) view.findViewById(R.id.tv_text);
-        view.findViewById(R.id.ll_back).setOnClickListener(new OnClickListener() {
+        llBack = view.findViewById(R.id.ll_back);
+        llBack.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(activity != null)
@@ -50,5 +52,6 @@ public class TitleBar extends FrameLayout {
 
     public void setActivity(Activity activity) {
         this.activity = activity;
+        llBack.setVisibility(activity == null ? GONE : VISIBLE);
     }
 }

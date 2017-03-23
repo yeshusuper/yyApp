@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -59,32 +60,52 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white_f8f8f8">
 
-        <LinearLayout style="@style/MainBottomItemContainer">
-            <ImageView style="@style/MainBottomItemImage"
+        <LinearLayout
+            android:id="@+id/ll_nav_home"
+            style="@style/MainBottomItemContainer">
+            <ImageView
+                android:id="@+id/iv_nav_home"
+                style="@style/MainBottomItemImage"
                 android:src="@drawable/main_bottom_nav_home_cur" />
             <TextView style="@style/MainBottomItemText"
                 android:textColor="@color/red_e82c1d"
+                android:id="@+id/tv_nav_home"
                 android:text="首页"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/MainBottomItemContainer">
-            <ImageView style="@style/MainBottomItemImage"
+        <LinearLayout
+            android:id="@+id/ll_nav_caigou"
+            style="@style/MainBottomItemContainer">
+            <ImageView
+                android:id="@+id/iv_nav_caigou"
+                style="@style/MainBottomItemImage"
                 android:src="@drawable/main_bottom_nav_caigou_nor" />
             <TextView style="@style/MainBottomItemText"
+                android:id="@+id/tv_nav_caigou"
                 android:text="采购"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/MainBottomItemContainer">
-            <ImageView style="@style/MainBottomItemImage"
+        <LinearLayout
+            android:id="@+id/ll_nav_kf"
+            style="@style/MainBottomItemContainer">
+            <ImageView
+                android:id="@+id/iv_nav_kf"
+                style="@style/MainBottomItemImage"
                 android:src="@drawable/main_bottom_nav_kf_nor" />
             <TextView style="@style/MainBottomItemText"
+                android:id="@+id/tv_nav_kf"
                 android:text="资讯客服"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/MainBottomItemContainer">
-            <ImageView style="@style/MainBottomItemImage"
+        <LinearLayout
+            android:id="@+id/ll_nav_my"
+            style="@style/MainBottomItemContainer">
+            <ImageView
+                android:id="@+id/iv_nav_my"
+                style="@style/MainBottomItemImage"
                 android:src="@drawable/main_bottom_nav_my_nor" />
             <TextView style="@style/MainBottomItemText"
+                android:id="@+id/tv_nav_my"
                 android:text="我的壹衣"/>
         </LinearLayout>
 
@@ -99,6 +120,7 @@
     </FrameLayout>
 
     <RelativeLayout
+        tools:visibility="gone"
         android:id="@+id/rl_kf_tip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fuliaohui.yy.widget.TitleBar
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.fuliaohui.yy.widget.TitleBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff">
+
+        <LinearLayout
+            android:id="@+id/ll_select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:background="@color/white_ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_555555"
+                    android:textSize="@dimen/font_45"
+                    android:text="采购状态筛选"
+                    />
+                <ImageView style="@style/IconSelect" />
+            </LinearLayout>
+            <TextView style="@style/LineX_b2b2b2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pub_caigou"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="@dimen/font_48"
+            android:textColor="@color/white_ffffff"
+            android:background="@color/red_e82c1d"
+            android:text="发布采购"
+            android:layout_width="133dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/tv_pub_caigou_line"
+            android:layout_above="@id/tv_pub_caigou"
+            style="@style/LineX_b2b2b2" />
+
+        <ScrollView
+            android:layout_below="@id/ll_select_btn"
+            android:layout_above="@id/tv_pub_caigou_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/gray_f2f2f2">
+
+                <LinearLayout style="@style/CaigouListItemLine"
+                    tools:visibility="gone">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_1"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gray_999999"
+                                android:textSize="@dimen/font_27"
+                                android:text="暂无竞标"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="主营商家"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine"
+                    tools:visibility="gone">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_2"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="5个竞标"/>
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="主营商家"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine"
+                    tools:visibility="gone">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_3"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_e82c1d"
+                                android:textSize="@dimen/font_27"
+                                android:text="已定商家"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="主营商家"/>
+                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                            android:text="付款"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine"
+                    tools:visibility="gone">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_4"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_e82c1d"
+                                android:textSize="@dimen/font_27"
+                                android:text="已付款"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="联系商家"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_5"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_e82c1d"
+                                android:textSize="@dimen/font_27"
+                                android:text="已发货"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="联系商家"/>
+                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                            android:text="确认收货"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_5"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_e82c1d"
+                                android:textSize="@dimen/font_27"
+                                android:text="完成交易"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="联系商家"/>
+                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                            android:text="评价"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/CaigouListItemLine">
+                    <LinearLayout style="@style/CaigouListItemContent">
+                        <ImageView style="@style/CaigouListItemImg"
+                            android:src="@drawable/new_product_img_5"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout style="@style/CaigouListItemInfo">
+                                <TextView style="@style/CaigouListItemInfoTitle"
+                                    android:text="复古塑料纽扣"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="10000个"/>
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限价0.01元" />
+                                <TextView style="@style/CaigouListItemInfoText"
+                                    android:text="限制7天内交货" />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_e82c1d"
+                                android:textSize="@dimen/font_27"
+                                android:text="已评价"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView style="@style/LineX_b2b2b2" />
+                    <LinearLayout style="@style/CaigouListItemOp">
+                        <CheckBox style="@style/CaigouListItemOpBtn"
+                            android:text="联系商家"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/ll_select_items"
+            android:layout_below="@id/ll_select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent60"
+            android:clickable="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:background="@color/white_ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView style="@style/DropSelectItem" android:text="无报价"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="有报价"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="已定商家"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="待付款"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="待收货"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="待评价"/>
+                <TextView style="@style/LineX_b2b2b2" />
+                <TextView style="@style/DropSelectItem" android:text="已收货"/>
+                <TextView style="@style/LineX_b2b2b2" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

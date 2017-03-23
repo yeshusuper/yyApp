@@ -13,6 +13,8 @@
             android:id="@+id/ll_back"
             android:layout_width="40dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:gravity="center">
 
             <ImageView

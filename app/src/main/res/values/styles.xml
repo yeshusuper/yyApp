@@ -185,6 +185,75 @@
         <item name="android:textSize">@dimen/font_36</item>
         <item name="android:textColor">@color/black_555555</item>
     </style>
+    <style name="CaigouListItemLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white_ffffff</item>
+    </style>
+    <style name="CaigouListItemContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+    <style name="CaigouListItemImg">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">72dp</item>
+    </style>
+    <style name="CaigouListItemInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="CaigouListItemInfoTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_48</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_555555</item>
+    </style>
+    <style name="CaigouListItemInfoText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_27</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <style name="CaigouListItemOp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="CaigouListItemOpBtn">
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selecter_right_class_select</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_27</item>
+    </style>
+    <style name="CaigouListItemOpBtn.Current">
+        <item name="android:checked">true</item>
+        <item name="android:textColor">@color/red_e82c1d</item>
+    </style>
+
+    <style name="DropSelectItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textSize">@dimen/font_45</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:gravity">center</item>
+    </style>
 
     <style name="LineX">
         <item name="android:background">@color/red_e82c1d</item>
