@@ -4,6 +4,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:textColor">@color/black_555555</item>
     </style>
 
     <style name="ActivityTheme" parent="AppTheme">
@@ -246,6 +248,95 @@
         <item name="android:checked">true</item>
         <item name="android:textColor">@color/red_e82c1d</item>
     </style>
+    
+    <style name="InputSelectContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/white_ffffff</item>
+    </style>
+    <style name="InputSelect">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="InputSelect.Empty">
+        <item name="android:textColor">@color/gray_999999</item>
+    </style>
+    <style name="InputSelectIcon">
+        <item name="android:layout_width">6dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:src">@drawable/icon_input_select</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="InputCheckBoxIcon">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@drawable/selecter_icon_check_box</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="InputCheckBoxIcon.Current">
+        <item name="android:checked">true</item>
+    </style>
+    <style name="InputMuiltCheckBoxContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="InputMuiltCheckBoxContainer.Right">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="InputMuiltCheckBoxItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">26dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="InputMuiltCheckBoxItem.Boundary">
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+    <style name="InputMuiltCheckBoxItemImg">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/icon_check_bor_nor</item>
+    </style>
+    <style name="InputMuiltCheckBoxItemImgCurrent" parent="InputMuiltCheckBoxItemImg">
+        <item name="android:src">@drawable/icon_check_bor_cur</item>
+    </style>
+    <style name="InputMuiltCheckBoxItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+    <style name="InputSelectLine" parent="LineX_dddddd">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColorHint">@color/gray_999999</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_33</item>
+        <item name="android:background">@drawable/shape_pub_product_img_border</item>
+    </style>
 
     <style name="DropSelectItem">
         <item name="android:layout_width">match_parent</item>
@@ -276,6 +367,12 @@
 
     <style name="LineX_b2b2b2">
         <item name="android:background">@color/gray_b2b2b2</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="LineX_dddddd">
+        <item name="android:background">@color/gray_dddddd</item>
         <item name="android:layout_height">1px</item>
         <item name="android:layout_width">match_parent</item>
     </style>

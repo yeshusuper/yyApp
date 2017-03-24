@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">壹衣</string>
+
+    <array name="units">
+        <item>斤</item>
+        <item>个</item>
+        <item>米</item>
+        <item>尺</item>
+        <item>罗</item>
+        <item>克</item>
+    </array>
 </resources>

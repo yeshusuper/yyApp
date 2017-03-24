@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2f2f2">
+
+    <com.fuliaohui.yy.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView style="@style/LineX_b2b2b2"/>
+
+    <LinearLayout
+        android:background="@color/white_ffffff"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/shape_pub_product_img_border"
+                android:src="@drawable/pub_product_img_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/pub_product_img_del"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/shape_pub_product_img_border"
+                android:src="@drawable/pub_product_img_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/pub_product_img_del"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/shape_pub_product_img_border"
+                android:src="@drawable/pub_product_img_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/pub_product_img_del"
+                android:layout_width="17dp"
+                android:layout_height="17dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@drawable/shape_pub_product_img_border"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/pub_product_add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+    <RelativeLayout style="@style/InputSelectContainer">
+        <TextView style="@style/InputSelect"
+            android:text="中大纺织商圈" />
+        <ImageView style="@style/InputSelectIcon" />
+        <TextView style="@style/InputSelectLine" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/InputSelectContainer">
+        <TextView style="@style/InputSelect.Empty"
+            android:text="选择产品分类" />
+        <ImageView style="@style/InputSelectIcon" />
+        <TextView style="@style/InputSelectLine" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/InputSelectContainer">
+        <TextView style="@style/InputSelect.Empty"
+            android:text="指定颜色" />
+        <ImageView style="@style/InputSelectIcon" />
+        <TextView style="@style/InputSelectLine" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/InputSelectContainer">
+        <TextView style="@style/InputSelect"
+            android:text="接受相似产品" />
+        <CheckBox style="@style/InputCheckBoxIcon.Current" />
+        <TextView style="@style/InputSelectLine" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/InputSelectContainer">
+        <TextView style="@style/InputSelect"
+            android:text="质量要求" />
+        <LinearLayout style="@style/InputMuiltCheckBoxContainer.Right">
+            <LinearLayout style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="高"/>
+                <ImageView style="@style/InputMuiltCheckBoxItemImgCurrent" />
+            </LinearLayout>
+            <LinearLayout style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="中"/>
+                <ImageView style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+            <LinearLayout style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="低"/>
+                <ImageView style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:background="@color/white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <EditText
+            tools:visibility="gone"
+            android:background="@drawable/shape_pub_product_img_border"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left|top"
+            android:textSize="@dimen/font_39"
+            android:textColor="@color/gray_999999"
+            android:padding="10dp"
+            android:hint="输入产品描述/需求"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="@color/white_ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout style="@style/InputMuiltCheckBoxContainer"
+            android:layout_height="39dp">
+            <LinearLayout style="@style/InputMuiltCheckBoxItem.Boundary">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="采购"/>
+                <ImageView style="@style/InputMuiltCheckBoxItemImgCurrent" />
+            </LinearLayout>
+            <LinearLayout style="@style/InputMuiltCheckBoxItem">
+                <TextView style="@style/InputMuiltCheckBoxItemText"
+                    android:text="取样"/>
+                <ImageView style="@style/InputMuiltCheckBoxItemImg" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            tools:visibility="gone"
+            android:id="@+id/ll_caigou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/sp_unit"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_pub_product_img_border"
+                    android:layout_width="53dp"
+                    android:layout_height="28dp"
+                    android:dropDownSelector="@color/black_555555"
+                    android:gravity="center"
+                    android:entries="@array/units"
+                    android:layout_centerVertical="true">
+                </Spinner>
+                <EditText style="@style/Input"
+                    android:layout_toLeftOf="@id/sp_unit"
+                    android:hint="需求量"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_unit"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:layout_marginLeft="10dp"
+                    android:text="斤内"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/et_kongcha"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="空差需在"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>
+                <EditText style="@style/Input"
+                    android:layout_toRightOf="@id/et_kongcha"
+                    android:layout_toLeftOf="@id/tv_unit"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox style="@style/InputCheckBoxIcon.Current"
+                    android:id="@+id/cb_limit"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/tv_unit2"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="元/斤"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+                <EditText style="@style/Input"
+                    android:hint="能接受的最高售价"
+                    android:layout_toRightOf="@id/cb_limit"
+                    android:layout_toLeftOf="@id/tv_unit2"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox style="@style/InputCheckBoxIcon.Current"
+                    android:id="@+id/cb_limit2"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/tv_unit3"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="天"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+                <EditText style="@style/Input"
+                    android:hint="多少天内必须发货"
+                    android:layout_toRightOf="@id/cb_limit2"
+                    android:layout_toLeftOf="@id/tv_unit3"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_quyang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox style="@style/InputCheckBoxIcon.Current"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="我愿意支付取样费用"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox style="@style/InputCheckBoxIcon"
+                    android:id="@+id/cb_quyang"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/tv_unit4"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/font_36"
+                    android:textColor="@color/black_555555"
+                    android:text="元"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+                <EditText style="@style/Input"
+                    android:hint="输入支付采样费用的金额"
+                    android:layout_toRightOf="@id/cb_quyang"
+                    android:layout_toLeftOf="@id/tv_unit4"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/red_e82c1d"
+        android:text="发布采购需求"
+        android:textSize="@dimen/font_45"
+        android:textColor="@color/white_ffffff"
+        android:gravity="center"/>
+</LinearLayout>
