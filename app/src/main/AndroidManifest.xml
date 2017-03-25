@@ -22,8 +22,11 @@
         </activity>
         <activity android:name=".NewProductDetailActivity"
             android:theme="@style/ActivityTheme"
-            android:launchMode="singleTop">
-        </activity>
+            android:launchMode="singleTop"/>
+        <activity android:name=".PublishProductActivity"
+                  android:theme="@style/ActivityTheme"
+                  android:windowSoftInputMode="stateHidden|adjustPan"
+                  android:launchMode="singleTop"/>
 
     </application>
 

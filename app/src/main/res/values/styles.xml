@@ -169,6 +169,50 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:layout_width">0dp</item>
     </style>
+    
+    <style name="RigthColorSelectContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="RigthColorSelectTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="RigthColorSelectItemLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="RigthColorSelectItem">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/selecter_right_class_select</item>
+    </style>
+    <style name="RigthColorSelectItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:textSize">@dimen/font_30</item>
+    </style>
+    <style name="RigthColorSelectItemColor">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+    </style>
+    <style name="RightColorSelectItemGrp" parent="RightClassSelectItemGrp">
+
+    </style>
 
     <style name="NewProductDetailInfoLine">
         <item name="android:layout_width">wrap_content</item>
@@ -300,6 +344,7 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:layout_marginLeft">26dp</item>
         <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
     </style>
     <style name="InputMuiltCheckBoxItem.Boundary">
         <item name="android:layout_marginLeft">0dp</item>
@@ -309,9 +354,7 @@
         <item name="android:layout_height">12dp</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:src">@drawable/icon_check_bor_nor</item>
-    </style>
-    <style name="InputMuiltCheckBoxItemImgCurrent" parent="InputMuiltCheckBoxItemImg">
-        <item name="android:src">@drawable/icon_check_bor_cur</item>
+        <item name="android:clickable">false</item>
     </style>
     <style name="InputMuiltCheckBoxItemText">
         <item name="android:layout_width">wrap_content</item>

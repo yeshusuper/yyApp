@@ -1,5 +1,6 @@
 package com.fuliaohui.yy.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yy.PublishProductActivity;
 import com.fuliaohui.yy.R;
 import com.fuliaohui.yy.widget.TitleBar;
 
@@ -36,6 +38,13 @@ public class CaigouListFragment extends Fragment {
             public void onClick(View view) {
                 if(selectItems.getVisibility() == View.GONE)
                     selectItems.setVisibility(View.VISIBLE);
+            }
+        });
+
+        view.findViewById(R.id.tv_pub_caigou).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PublishProductActivity.launchForCaigou(getContext());
             }
         });
         return view;

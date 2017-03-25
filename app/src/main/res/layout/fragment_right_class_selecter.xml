@@ -48,6 +48,7 @@
                 <LinearLayout style="@style/RightClassSelectItemLine">
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_1"
                         android:checked="true"
                         android:textColor="@color/red_e82c1d"
                         android:text="花边" />
@@ -55,11 +56,13 @@
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_2"
                         android:text="拉链" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_3"
                         android:text="纽扣" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
@@ -69,16 +72,19 @@
                 <LinearLayout style="@style/RightClassSelectItemLine">
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_4"
                         android:text="饰品" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_5"
                         android:text="五金" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_6"
                         android:text="织带" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
@@ -88,16 +94,19 @@
                 <LinearLayout style="@style/RightClassSelectItemLine">
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_7"
                         android:text="绣章" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_8"
                         android:text="手工制品" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_9"
                         android:text="服装配饰" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />
@@ -107,6 +116,7 @@
                 <LinearLayout style="@style/RightClassSelectItemLine">
 
                     <CheckBox style="@style/RightClassSelectItem"
+                              android:id="@+id/cb_10"
                         android:text="花饰" />
 
                     <TextView style="@style/RightClassSelectItemGrp" />

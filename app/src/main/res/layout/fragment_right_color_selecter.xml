@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_bg"
+        android:layout_width="43dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent60">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_36"
+                android:textColor="@color/black_555555"
+                android:text="选择颜色"/>
+
+            <TextView style="@style/LineX_b2b2b2"
+                      android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout style="@style/RigthColorSelectContainer">
+                    <TextView style="@style/RigthColorSelectTitle"
+                        android:text="黑白灰"/>
+                    <TextView style="@style/LineX_dddddd"/>
+
+                    <LinearLayout style="@style/RigthColorSelectItemLine">
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_1">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                android:background="@drawable/shape_color_select_000000"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_1"
+                                android:text="黑色"/>
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_2">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_808080"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_2"
+                                      android:text="深灰"/>
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_3">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_c9c9c9"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_3"
+                                      android:text="灰"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/RigthColorSelectContainer">
+                    <TextView style="@style/RigthColorSelectTitle"
+                              android:text="黄色系"/>
+                    <TextView style="@style/LineX_dddddd"/>
+
+                    <LinearLayout style="@style/RigthColorSelectItemLine">
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_4">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_fd8300"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_4"
+                                      android:text="橙色"/>
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_5">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_bb7039"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_5"
+                                      android:text="古铜"/>
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_6">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_ffdb4d"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_6"
+                                      android:text="金"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/RigthColorSelectItemLine">
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:id="@+id/cb_7">
+                            <TextView style="@style/RigthColorSelectItemColor"
+                                      android:background="@drawable/shape_color_select_ffec57"/>
+                            <TextView style="@style/RigthColorSelectItemText"
+                                      android:id="@+id/tv_7"
+                                      android:text="浅黄"/>
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:background="@color/transparent">
+                        </LinearLayout>
+                        <TextView style="@style/RightColorSelectItemGrp"/>
+                        <LinearLayout style="@style/RigthColorSelectItem"
+                                      android:background="@color/transparent">
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
