@@ -38,6 +38,11 @@
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:launchMode="singleTop"/>
 
+        <activity android:name=".MerchantListActivity"
+                  android:theme="@style/ActivityTheme"
+                  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:launchMode="singleTop"/>
+
     </application>
 
 </manifest>

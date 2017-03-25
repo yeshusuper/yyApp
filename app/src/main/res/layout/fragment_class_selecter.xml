@@ -79,8 +79,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_1"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_1"/>
 
@@ -90,8 +91,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_2"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_2" />
 
@@ -101,8 +103,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_3"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_3" />
 
@@ -118,8 +121,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_4"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_4" />
 
@@ -129,8 +133,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_5"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_5" />
 
@@ -140,8 +145,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_6"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_6" />
 
@@ -157,8 +163,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_7"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_7" />
 
@@ -168,8 +175,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_8"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_8" />
 
@@ -179,8 +187,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_9"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_9" />
 
@@ -196,8 +205,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_10"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_10" />
 
@@ -207,8 +217,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_11"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_3" />
 
@@ -218,8 +229,9 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-                <LinearLayout style="@style/MainRightItemContainer">
-
+                <LinearLayout
+                    android:id="@+id/ll_class_12"
+                    style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
                         android:src="@drawable/main_img_5" />
 

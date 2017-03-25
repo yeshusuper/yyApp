@@ -1,5 +1,6 @@
 package com.fuliaohui.yy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +25,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         findViewById(R.id.btn_merchant).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转主营商家列表
+                startActivity(new Intent(ProductDetailActivity.this, MerchantListActivity.class));
             }
         });
     }

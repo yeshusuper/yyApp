@@ -146,6 +146,48 @@
         <item name="android:textColor">@color/gray_999999</item>
         <item name="android:textSize">@dimen/font_30</item>
     </style>
+
+    <style name="MerchantItemContainer" parent="NewProductItemContainer">
+    </style>
+    <style name="MerchantItemImg" parent="NewProductItemImg">
+    </style>
+    <style name="MerchantItemTextContainer" parent="NewProductItemTextContainer">
+    </style>
+    <style name="MerchantItemText1" parent="NewProductItemText1"></style>
+    <style name="MerchantItemText2">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">@dimen/font_33</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MerchantItemText3">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MerchantItemText4" parent="MerchantItemText3">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/red_e82c1d</item>
+    </style>
+    <style name="MerchantItemPlace">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:text">位置</item>
+        <item name="android:textColor">@color/black_555555</item>
+        <item name="android:background">@drawable/shape_right_class_select_nor</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">23dp</item>
+        <item name="android:paddingRight">23dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
     <style name="RightClassSelectItemLine">
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:layout_height">wrap_content</item>
