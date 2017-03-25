@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.fuliaohui.yy.ChatActivity;
 import com.fuliaohui.yy.MerchantListActivity;
 import com.fuliaohui.yy.OrderDetailActivity;
+import com.fuliaohui.yy.PayActivity;
 import com.fuliaohui.yy.ProductDetailActivity;
 import com.fuliaohui.yy.PublishProductActivity;
 import com.fuliaohui.yy.R;
@@ -98,7 +99,7 @@ public class CaigouListFragment extends Fragment {
         view.findViewById(R.id.cb_pay_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到支付
+                getContext().startActivity(new Intent(getContext(), PayActivity.class));
             }
         });
         view.findViewById(R.id.cb_tender_1).setOnClickListener(new View.OnClickListener() {

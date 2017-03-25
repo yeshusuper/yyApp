@@ -63,6 +63,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:launchMode="singleTop"/>
 
+        <activity android:name=".PayActivity"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTop"/>
+
     </application>
 
 </manifest>
