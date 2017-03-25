@@ -24,7 +24,7 @@ public class NewProductDetailActivity extends AppCompatActivity {
         findViewById(R.id.ll_talk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到聊天
+                ChatActivity.launchChat(NewProductDetailActivity.this);
             }
         });
         findViewById(R.id.btn_quyang).setOnClickListener(new View.OnClickListener() {

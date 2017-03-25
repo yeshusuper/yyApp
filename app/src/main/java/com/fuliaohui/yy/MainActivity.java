@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         llNavKf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到聊天
+                ChatActivity.launchKf(MainActivity.this);
             }
         });
         llNavMy.setOnClickListener(new View.OnClickListener() {

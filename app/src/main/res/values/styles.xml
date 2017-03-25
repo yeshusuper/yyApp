@@ -445,6 +445,22 @@
         <item name="android:textSize">@dimen/font_33</item>
         <item name="android:background">@drawable/shape_pub_product_img_border</item>
     </style>
+    <style name="ChatNotify">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white_ffffff</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:textSize">@dimen/font_27</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/shape_chat_notify_bg</item>
+    </style>
 
     <style name="DropSelectItem">
         <item name="android:layout_width">match_parent</item>

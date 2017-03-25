@@ -24,7 +24,7 @@ public class OrderDetailActivity extends AppCompatActivity {
         titleBar.setRigthText("沟通一下", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到聊天
+                ChatActivity.launchChat(OrderDetailActivity.this);
             }
         });
     }

@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yy.ChatActivity;
 import com.fuliaohui.yy.MerchantListActivity;
 import com.fuliaohui.yy.OrderDetailActivity;
 import com.fuliaohui.yy.ProductDetailActivity;
@@ -80,7 +81,7 @@ public class CaigouListFragment extends Fragment {
         View.OnClickListener listener4 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到聊天
+                ChatActivity.launchChat(getContext());
             }
         };
         int[] talkIds = new int[] { R.id.cb_talk_1, R.id.cb_talk_2, R.id.cb_talk_3, R.id.cb_talk_4 };

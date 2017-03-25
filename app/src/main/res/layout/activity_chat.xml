@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2f2f2">
+
+    <com.fuliaohui.yy.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_quick_product_container"
+        android:background="@color/white_ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView style="@style/LineX_b2b2b2" />
+        <RelativeLayout
+            android:id="@+id/ll_quick_product"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_quite_product_img"
+                android:src="@drawable/new_product_img_1"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="27dp" />
+            <TextView
+                android:layout_toRightOf="@id/iv_quite_product_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="复古塑料纽扣"
+                android:textSize="@dimen/font_45"
+                android:textColor="@color/black_555555"/>
+            <TextView
+                android:id="@+id/tv_create_order"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="9dp"
+                android:paddingLeft="9dp"
+                android:text="让商家准备订单"
+                android:gravity="center"
+                android:background="@drawable/shape_right_class_select_nor"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView style="@style/LineX_b2b2b2" />
+
+    <TextView style="@style/ChatNotify"
+        android:id="@+id/tv_notify"
+        android:text="温馨提示：与对方沟通时请使用聊天功能。发生纠纷时，可以此为凭证"/>
+    <TextView style="@style/ChatNotify"
+        android:text="2017年3月2日  17:35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+        <RelativeLayout
+            android:layout_marginRight="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp">
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/my_char_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_marginRight="13dp"
+                android:textColor="@color/white_ffffff"
+                android:gravity="center_vertical"
+                android:text="今天可以发货么"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <ImageView
+            android:src="@drawable/icon_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left">
+        <ImageView
+            android:src="@drawable/icon_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <RelativeLayout
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/other_char_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"/>
+            <TextView
+                android:layout_marginLeft="13dp"
+                android:textColor="@color/black_555555"
+                android:gravity="center_vertical"
+                android:text="可以，今天发货"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@color/white_ffffff"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="49dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:src="@drawable/icon_voice"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="10dp"/>
+            <EditText
+                android:background="@drawable/shape_input"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="10dp" />
+            <ImageView
+                android:src="@drawable/icon_emoji"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="10dp" />
+            <ImageView
+                android:src="@drawable/icon_img"
+                android:layout_width="34dp"
+                android:layout_height="34dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_above="@id/ll_edit"
+            style="@style/LineX_b2b2b2" />
+    </RelativeLayout>
+</LinearLayout>
