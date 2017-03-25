@@ -14,17 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:layout_alignParentBottom="true"
-            android:id="@+id/btn_pub"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:background="@color/red_e82c1d"
-            android:text="发布采购(30分钟内响应)"
-            android:textSize="@dimen/font_45"
-            android:textColor="@color/white_ffffff"
-            android:gravity="center"/>
-
         <LinearLayout
             android:id="@+id/ll_select_btn"
             android:background="@color/white_ffffff"
@@ -47,7 +36,6 @@
 
         <ScrollView
             android:layout_below="@id/tv_select_bottom_line"
-            android:layout_above="@id/btn_pub"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
@@ -56,6 +44,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/ll_detail_1"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
                                android:src="@drawable/new_product_img_1"/>
@@ -73,17 +62,16 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="评价：96.7分"/>
-                                <TextView style="@style/MerchantItemText4"
-                                          android:text="比同行高5.1分"/>
+                                          android:text="报价时间：2/25 16:30"/>
                             </LinearLayout>
                         </LinearLayout>
-                        <TextView style="@style/MerchantItemPlace"
-                                  android:id="@+id/tv_place_1"/>
+                        <TextView style="@style/MerchantTenderItemText4"
+                                  android:text="96.7分"/>
+                        <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>
-
                 <LinearLayout
+                    android:id="@+id/ll_detail_2"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
                                android:src="@drawable/new_product_img_1"/>
@@ -101,17 +89,16 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="评价：96.7分"/>
-                                <TextView style="@style/MerchantItemText4"
-                                          android:text="比同行高5.1分"/>
+                                          android:text="报价时间：2/25 16:30"/>
                             </LinearLayout>
                         </LinearLayout>
-                        <TextView style="@style/MerchantItemPlace"
-                                  android:id="@+id/tv_place_2"/>
+                        <TextView style="@style/MerchantTenderItemText4"
+                                  android:text="96.7分"/>
+                        <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>
-
                 <LinearLayout
+                    android:id="@+id/ll_detail_3"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
                                android:src="@drawable/new_product_img_1"/>
@@ -129,13 +116,39 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="评价：96.7分"/>
-                                <TextView style="@style/MerchantItemText4"
-                                          android:text="比同行高5.1分"/>
+                                          android:text="报价时间：2/25 16:30"/>
                             </LinearLayout>
                         </LinearLayout>
-                        <TextView style="@style/MerchantItemPlace"
-                                  android:id="@+id/tv_place_3"/>
+                        <TextView style="@style/MerchantTenderItemText4"
+                                  android:text="96.7分"/>
+                        <TextView style="@style/MerchantTenderItemDetail"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_detail_4"
+                    style="@style/MerchantItemContainer">
+                    <ImageView style="@style/MerchantItemImg"
+                               android:src="@drawable/new_product_img_1"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/MerchantItemTextContainer">
+                            <TextView style="@style/MerchantItemText1"
+                                      android:text="壹衣辅料大卖场" />
+                            <TextView style="@style/MerchantItemText2"
+                                      android:text="年成单：1826单" />
+                            <TextView style="@style/MerchantItemText3"
+                                      android:text="月成单：112单"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView style="@style/MerchantItemText3"
+                                          android:text="报价时间：2/25 16:30"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView style="@style/MerchantTenderItemText4"
+                                  android:text="96.7分"/>
+                        <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>
 

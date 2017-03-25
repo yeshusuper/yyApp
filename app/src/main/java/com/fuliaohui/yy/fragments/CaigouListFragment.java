@@ -14,6 +14,7 @@ import com.fuliaohui.yy.OrderDetailActivity;
 import com.fuliaohui.yy.ProductDetailActivity;
 import com.fuliaohui.yy.PublishProductActivity;
 import com.fuliaohui.yy.R;
+import com.fuliaohui.yy.TenderListActivity;
 import com.fuliaohui.yy.widget.TitleBar;
 
 /**
@@ -102,7 +103,7 @@ public class CaigouListFragment extends Fragment {
         view.findViewById(R.id.cb_tender_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到竞标列表
+                getContext().startActivity(new Intent(getContext(), TenderListActivity.class));
             }
         });
 
