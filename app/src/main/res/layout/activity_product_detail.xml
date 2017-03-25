@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.fuliaohui.yy.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                tools:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/new_product_detail_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"/>
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/muil_img"
+                    android:layout_width="105dp"
+                    android:layout_height="12dp"
+                    android:paddingBottom="6dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="区域：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="中大纺织商圈" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="分类：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="辅料/纽扣/塑料扣" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="描述：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="复古塑料纽扣" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_36"
+                        android:textColor="@color/red_e82c1d"
+                        android:text="修改"
+                        />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine"
+                              android:gravity="center_vertical">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="颜色："/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_1"/>
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:paddingLeft="3dp"
+                              android:paddingRight="10dp"
+                              android:text="c030"/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_2"/>
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:paddingLeft="3dp"
+                              android:paddingRight="10dp"
+                              android:text="c031"/>
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/shape_product_color_3"/>
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:paddingLeft="3dp"
+                              android:paddingRight="10dp"
+                              android:text="c032"/>
+                </LinearLayout>
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="采购量：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="10000个" />
+                </LinearLayout>
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="发布日期：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="2017/3/25" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="限价：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="0.07元/个" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="限天：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="7天内" />
+                </LinearLayout>
+            </LinearLayout>>
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+                <Button
+                    android:textSize="@dimen/font_45"
+                    android:text="删除采购"
+                    android:textColor="@color/white_ffffff"
+                    android:background="@color/gray_999999"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:textSize="@dimen/font_45"
+                    android:text="主营商家列表"
+                    android:textColor="@color/black_555555"
+                    android:background="@color/white_ffffff"
+                    android:layout_weight="1.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

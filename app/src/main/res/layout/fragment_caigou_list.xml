@@ -67,8 +67,9 @@
                 android:orientation="vertical"
                 android:background="@color/gray_f2f2f2">
 
-                <LinearLayout style="@style/CaigouListItemLine"
-                    tools:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/ll_product_1"
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
                             android:src="@drawable/new_product_img_1"/>
@@ -102,7 +103,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine"
+                <LinearLayout
+                    android:id="@+id/ll_product_2"
+                    style="@style/CaigouListItemLine"
                     tools:visibility="gone">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
@@ -131,7 +134,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine"
+                <LinearLayout
+                    android:id="@+id/ll_product_3"
+                    style="@style/CaigouListItemLine"
                     tools:visibility="gone">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
@@ -168,7 +173,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine"
+                <LinearLayout
+                    android:id="@+id/ll_product_4"
+                    style="@style/CaigouListItemLine"
                     tools:visibility="gone">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
@@ -203,7 +210,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine">
+                <LinearLayout
+                    android:id="@+id/ll_product_5"
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
                             android:src="@drawable/new_product_img_5"/>
@@ -239,7 +248,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine">
+                <LinearLayout
+                    android:id="@+id/ll_product_6"
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
                             android:src="@drawable/new_product_img_5"/>
@@ -275,7 +286,9 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout style="@style/CaigouListItemLine">
+                <LinearLayout
+                    android:id="@+id/ll_product_7"
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
                             android:src="@drawable/new_product_img_5"/>

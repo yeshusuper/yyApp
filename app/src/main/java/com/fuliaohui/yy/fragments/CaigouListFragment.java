@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yy.ProductDetailActivity;
 import com.fuliaohui.yy.PublishProductActivity;
 import com.fuliaohui.yy.R;
 import com.fuliaohui.yy.widget.TitleBar;
@@ -47,6 +48,17 @@ public class CaigouListFragment extends Fragment {
                 PublishProductActivity.launchForCaigou(getContext());
             }
         });
+        int[] productIds = new int[]{ R.id.ll_product_1,R.id.ll_product_2,R.id.ll_product_3,R.id.ll_product_4,R.id.ll_product_5,R.id.ll_product_6,R.id.ll_product_7 };
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getContext().startActivity(new Intent(getContext(), ProductDetailActivity.class));
+            }
+        };
+        for (int productId : productIds) {
+            view.findViewById(productId).setOnClickListener(listener);
+        }
+
         return view;
     }
 }
