@@ -2,6 +2,7 @@ package com.fuliaohui.yy.widget;
 
 import android.app.Activity;
 import android.content.Context;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -17,6 +18,7 @@ public class TitleBar extends FrameLayout {
     private TextView tvTitle;
     private Activity activity;
     private View llBack;
+    private TextView tvRigthText;
 
     public TitleBar(Context context) {
         super(context);
@@ -36,6 +38,7 @@ public class TitleBar extends FrameLayout {
     private void init(Context context){
         View view = inflate(context, R.layout.widget_title_bar, this);
         tvTitle = (TextView) view.findViewById(R.id.tv_text);
+        tvRigthText = (TextView)view.findViewById(R.id.tv_right_text);
         llBack = view.findViewById(R.id.ll_back);
         llBack.setOnClickListener(new OnClickListener() {
             @Override
@@ -48,6 +51,16 @@ public class TitleBar extends FrameLayout {
 
     public void setTitle(CharSequence title){
         tvTitle.setText(title);
+    }
+
+    public void setRigthText(CharSequence text, OnClickListener listener){
+        if(!TextUtils.isEmpty(text)){
+            tvRigthText.setText(text);
+            tvRigthText.setOnClickListener(listener);
+            tvRigthText.setVisibility(VISIBLE);
+        }else{
+            tvRigthText.setVisibility(GONE);
+        }
     }
 
     public void setActivity(Activity activity) {

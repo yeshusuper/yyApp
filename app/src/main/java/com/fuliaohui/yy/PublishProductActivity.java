@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,45 +23,45 @@ import com.fuliaohui.yy.widget.TitleBar;
  */
 
 public class PublishProductActivity extends AppCompatActivity {
-    public interface OnCheckChangedListener{
+    public interface OnCheckChangedListener {
         void onCheckChanged(CheckBoxItem item, boolean checked);
     }
 
-    private class CheckBoxItem{
+    private class CheckBoxItem {
         public final int containerId;
         private final View containerView;
         private final ImageView checkBoxView;
         private final View.OnClickListener listener;
         private OnCheckChangedListener checkChangedListener;
 
-        public CheckBoxItem(int containerId, int checkBoxId){
+        public CheckBoxItem(int containerId, int checkBoxId) {
             this.containerId = containerId;
             this.containerView = findViewById(containerId);
             this.checkBoxView = (ImageView) containerView.findViewById(checkBoxId);
             this.listener = new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(!isChecked()){
+                    if (!isChecked()) {
                         checkBoxView.setImageResource(R.drawable.icon_check_bor_cur);
                         v.setTag(true);
                     } else {
                         checkBoxView.setImageResource(R.drawable.icon_check_bor_nor);
                         v.setTag(false);
                     }
-                    if(checkChangedListener != null)
+                    if (checkChangedListener != null)
                         checkChangedListener.onCheckChanged(CheckBoxItem.this, isChecked());
                 }
             };
             this.containerView.setOnClickListener(this.listener);
         }
 
-        public boolean isChecked(){
+        public boolean isChecked() {
             Boolean checked = (Boolean) containerView.getTag();
             return checked != null && checked.booleanValue();
         }
 
-        public void setChecked(boolean checked){
-            if(isChecked() == checked)
+        public void setChecked(boolean checked) {
+            if (isChecked() == checked)
                 return;
             listener.onClick(containerView);
         }
@@ -72,8 +71,14 @@ public class PublishProductActivity extends AppCompatActivity {
         }
     }
 
-    public static void launchForCaigou(Context context){
+    public static void launchForCaigou(Context context) {
         context.startActivity(new Intent(context, PublishProductActivity.class));
+    }
+
+    public static void launchForQuyang(Context context) {
+        Intent intent = new Intent(context, PublishProductActivity.class);
+        intent.putExtra("type", 1);
+        context.startActivity(intent);
     }
 
     @Override
@@ -81,7 +86,7 @@ public class PublishProductActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_publish_product);
 
-        TitleBar titleBar = ((TitleBar)findViewById(R.id.title_bar));
+        TitleBar titleBar = ((TitleBar) findViewById(R.id.title_bar));
         titleBar.setTitle("发布采购需求");
         titleBar.setActivity(this);
 
@@ -89,14 +94,16 @@ public class PublishProductActivity extends AppCompatActivity {
                 new CheckBoxItem(R.id.ll_quality_1, R.id.iv_quality_1),
                 new CheckBoxItem(R.id.ll_quality_2, R.id.iv_quality_2),
                 new CheckBoxItem(R.id.ll_quality_3, R.id.iv_quality_3)
-                );
+        );
 
         final View llCaiggou = findViewById(R.id.ll_caigou);
         final View llQuyang = findViewById(R.id.ll_quyang);
-        bindCheckBox(true, new OnCheckChangedListener() {
+        CheckBoxItem checkBoxItemCaigou = new CheckBoxItem(R.id.ll_type_1, R.id.iv_type_1);
+        CheckBoxItem checkBoxItemQuyang = new CheckBoxItem(R.id.ll_type_2, R.id.iv_type_2);
+        bindCheckBox(false, new OnCheckChangedListener() {
                     @Override
                     public void onCheckChanged(CheckBoxItem item, boolean checked) {
-                        switch (item.containerId){
+                        switch (item.containerId) {
                             case R.id.ll_type_1:
                                 llCaiggou.setVisibility(checked ? View.VISIBLE : View.GONE);
                                 break;
@@ -106,9 +113,10 @@ public class PublishProductActivity extends AppCompatActivity {
                         }
                     }
                 },
-                new CheckBoxItem(R.id.ll_type_1, R.id.iv_type_1),
-                new CheckBoxItem(R.id.ll_type_2, R.id.iv_type_2)
+                checkBoxItemCaigou, checkBoxItemQuyang
         );
+        int type = getIntent().getIntExtra("type", 0);
+        (type > 0 ? checkBoxItemQuyang : checkBoxItemCaigou).setChecked(true);
 
         final TextView tvUnit = (TextView) findViewById(R.id.tv_unit);
         final TextView tvUnit2 = (TextView) findViewById(R.id.tv_unit2);
@@ -145,11 +153,17 @@ public class PublishProductActivity extends AppCompatActivity {
                 fragment.show(getSupportFragmentManager());
             }
         });
+        findViewById(R.id.btn_pub).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
-    private void bindCheckBoxWithEditText(int editTextId, int checkBoxId){
+    private void bindCheckBoxWithEditText(int editTextId, int checkBoxId) {
         final EditText editText = (EditText) findViewById(editTextId);
-        ((CheckBox)findViewById(checkBoxId)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ((CheckBox) findViewById(checkBoxId)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 editText.setEnabled(isChecked);
@@ -157,7 +171,7 @@ public class PublishProductActivity extends AppCompatActivity {
         });
     }
 
-    private void bindCheckBox(boolean setFirstChecked, final OnCheckChangedListener listener, final CheckBoxItem... items){
+    private void bindCheckBox(boolean setFirstChecked, final OnCheckChangedListener listener, final CheckBoxItem... items) {
         OnCheckChangedListener listener2 = new OnCheckChangedListener() {
             @Override
             public void onCheckChanged(CheckBoxItem item, boolean checked) {
@@ -167,14 +181,14 @@ public class PublishProductActivity extends AppCompatActivity {
                             checkBoxItem.setChecked(false);
                     }
                 }
-                if(listener != null)
+                if (listener != null)
                     listener.onCheckChanged(item, checked);
             }
         };
         for (CheckBoxItem item : items) {
             item.setCheckChangedListener(listener2);
         }
-        if(setFirstChecked)
+        if (setFirstChecked)
             items[0].setChecked(true);
     }
 }

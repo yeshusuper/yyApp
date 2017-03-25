@@ -11,20 +11,20 @@ import com.fuliaohui.yy.widget.TitleBar;
  * Created by wulf on 2017/3/25.
  */
 
-public class ProductDetailActivity extends AppCompatActivity {
+public class OrderDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_order_detail);
 
         TitleBar titleBar = (TitleBar) findViewById(R.id.title_bar);
-        titleBar.setTitle("采购详情");
+        titleBar.setTitle("订单详情");
         titleBar.setActivity(this);
-        
-        findViewById(R.id.btn_merchant).setOnClickListener(new View.OnClickListener() {
+
+        titleBar.setRigthText("沟通一下", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转主营商家列表
+                // TODO: 2017/3/25 跳转到聊天
             }
         });
     }

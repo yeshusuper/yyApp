@@ -37,12 +37,20 @@
             </RelativeLayout>
 
             <LinearLayout
+                tools:visibility="gone"
                 android:paddingTop="20dp"
                 android:paddingRight="20dp"
                 android:paddingLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="商品名称：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="复古塑料纽扣" />
+                </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
@@ -53,24 +61,9 @@
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
-                              android:text="分类：" />
+                              android:text="商户：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="辅料/纽扣/塑料扣" />
-                </LinearLayout>
-
-                <LinearLayout style="@style/NewProductDetailInfoLine">
-                    <TextView style="@style/NewProductDetailInfoTitle"
-                              android:text="描述：" />
-                    <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="复古塑料纽扣" />
-                    <TextView
-                        android:layout_marginLeft="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/font_36"
-                        android:textColor="@color/red_e82c1d"
-                        android:text="修改"
-                        />
+                              android:text="壹衣辅料大卖场" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine"
@@ -102,17 +95,47 @@
                               android:paddingRight="10dp"
                               android:text="c032"/>
                 </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="描述：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="复古塑料纽扣，2017最新款，4洞，新工艺爆款" />
+                </LinearLayout>
+
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="采购量：" />
                     <TextView style="@style/NewProductDetailInfoContent"
                               android:text="10000个" />
                 </LinearLayout>
+
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
-                              android:text="发布日期：" />
+                              android:text="单价：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="2017/3/25" />
+                              android:text="0.01元/个" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="货期：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="现货" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="总价：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="120元" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="物流：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="20元" />
                 </LinearLayout>
             </LinearLayout>
             <TextView style="@style/LineX_b2b2b2" />
@@ -123,18 +146,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+                <TextView
+                    android:textColor="@color/black_555555"
+                    android:textSize="@dimen/font_36"
+                    android:layout_marginBottom="20dp"
+                    android:text="物流信息"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
-                              android:text="限价：" />
+                              android:text="顺丰：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="0.07元/个" />
+                              android:text="xxxxxxxxxxxx" />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_36"
+                        android:textColor="@color/red_e82c1d"
+                        android:text="查看物流详情"
+                        />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
-                    <TextView style="@style/NewProductDetailInfoTitle"
-                              android:text="限天：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="7天内" />
+                              android:text="黄色8000个" />
                 </LinearLayout>
             </LinearLayout>>
             <TextView style="@style/LineX_b2b2b2" />
@@ -143,20 +179,10 @@
                 android:layout_height="49dp">
                 <Button
                     android:textSize="@dimen/font_45"
-                    android:text="删除采购"
+                    android:text="确认收货"
                     android:textColor="@color/white_ffffff"
-                    android:background="@color/gray_999999"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent" />
-                <Button
-                    android:id="@+id/btn_merchant"
-                    android:textSize="@dimen/font_45"
-                    android:text="主营商家列表"
-                    android:textColor="@color/black_555555"
-                    android:background="@color/white_ffffff"
-                    android:layout_weight="1.7"
-                    android:layout_width="0dp"
+                    android:background="@color/red_e82c1d"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
 
