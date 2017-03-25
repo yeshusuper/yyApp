@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.fuliaohui.yy.ChatActivity;
+import com.fuliaohui.yy.EvaluateActivity;
 import com.fuliaohui.yy.MerchantListActivity;
 import com.fuliaohui.yy.OrderDetailActivity;
 import com.fuliaohui.yy.PayActivity;
@@ -93,7 +94,7 @@ public class CaigouListFragment extends Fragment {
         view.findViewById(R.id.cb_evaluate_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到评价
+                getContext().startActivity(new Intent(getContext(), EvaluateActivity.class));
             }
         });
         view.findViewById(R.id.cb_pay_1).setOnClickListener(new View.OnClickListener() {
