@@ -102,6 +102,18 @@ public class MainActivity extends AppCompatActivity {
         };
         llNavHome.setOnClickListener(bottomNavClickListener);
         llNavCaigou.setOnClickListener(bottomNavClickListener);
+        llNavKf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到聊天
+            }
+        });
+        llNavMy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到我的资料
+            }
+        });
     }
 
     private boolean setBottomNavChecked(View clickView, View view, int imgId, int textId, int norId, int curId) {

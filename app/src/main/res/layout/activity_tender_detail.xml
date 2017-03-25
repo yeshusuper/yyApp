@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.fuliaohui.yy.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                tools:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/new_product_detail_img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"/>
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/muil_img"
+                    android:layout_width="105dp"
+                    android:layout_height="12dp"
+                    android:paddingBottom="6dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="区域：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="中大纺织商圈" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="商户：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="壹衣辅料大卖场" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="单价：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="0.01元/个" />
+                </LinearLayout>
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="货期：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="现货" />
+                </LinearLayout>
+                <LinearLayout style="@style/NewProductDetailInfoLine">
+                    <TextView style="@style/NewProductDetailInfoTitle"
+                              android:text="备注：" />
+                    <TextView style="@style/NewProductDetailInfoContent"
+                              android:text="质量一流" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView style="@style/LineX_b2b2b2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+                <LinearLayout
+                    android:id="@+id/ll_talk"
+                    android:background="@color/white_ffffff"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/talk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:textColor="@color/black_555555"
+                        android:text="沟通一下"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView style="@style/LineY_b2b2b2"/>
+                <LinearLayout
+                    android:id="@+id/ll_place"
+                    android:background="@color/white_ffffff"
+                    android:layout_weight="1.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/icon_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:textColor="@color/black_555555"
+                        android:text="位置"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

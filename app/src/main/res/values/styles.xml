@@ -478,6 +478,11 @@
         <item name="android:layout_height">1px</item>
         <item name="android:layout_width">match_parent</item>
     </style>
+    <style name="LineY_b2b2b2">
+        <item name="android:background">@color/gray_b2b2b2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1px</item>
+    </style>
 
     <style name="LineX_dddddd">
         <item name="android:background">@color/gray_dddddd</item>

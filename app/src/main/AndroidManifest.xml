@@ -53,6 +53,11 @@
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:launchMode="singleTop"/>
 
+        <activity android:name=".TenderDetailActivity"
+                  android:theme="@style/ActivityTheme"
+                  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:launchMode="singleTop"/>
+
     </application>
 
 </manifest>

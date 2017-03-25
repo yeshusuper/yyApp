@@ -1,5 +1,6 @@
 package com.fuliaohui.yy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -42,7 +43,7 @@ public class TenderListActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到竞标详细
+                startActivity(new Intent(TenderListActivity.this, TenderDetailActivity.class));
             }
         };
         int[] detailIds = new int[]{ R.id.ll_detail_1, R.id.ll_detail_2, R.id.ll_detail_3, R.id.ll_detail_4 };
