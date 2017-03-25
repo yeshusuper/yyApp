@@ -1,5 +1,6 @@
 package com.fuliaohui.yy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.StyleRes;
 import android.support.v4.app.Fragment;
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         llNavMy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到我的资料
+                startActivity(new Intent(MainActivity.this, MyActivity.class));
             }
         });
     }
