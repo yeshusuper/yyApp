@@ -169,7 +169,7 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="MerchantItemText4" parent="MerchantItemText3">
-        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
         <item name="android:textColor">@color/red_e82c1d</item>
     </style>
     <style name="MerchantItemPlace">

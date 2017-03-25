@@ -55,9 +55,9 @@
                             <TextView style="@style/MerchantItemText1"
                                       android:text="壹衣辅料大卖场" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="年成单：1826单" />
+                                      android:text="单价：0.0095元/个" />
                             <TextView style="@style/MerchantItemText3"
-                                      android:text="月成单：112单"/>
+                                      android:text="订做：7天"/>
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -82,15 +82,17 @@
                             <TextView style="@style/MerchantItemText1"
                                       android:text="壹衣辅料大卖场" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="年成单：1826单" />
-                            <TextView style="@style/MerchantItemText3"
-                                      android:text="月成单：112单"/>
+                                      android:text="单价：0.0095元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="报价时间：2/25 16:30"/>
+                                          android:text="现货"/>
+                                <TextView style="@style/MerchantItemText4"
+                                      android:text="有图"/>
                             </LinearLayout>
+                            <TextView style="@style/MerchantItemText3"
+                                      android:text="报价时间：2/25 16:30"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
                                   android:text="96.7分"/>
@@ -109,15 +111,17 @@
                             <TextView style="@style/MerchantItemText1"
                                       android:text="壹衣辅料大卖场" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="年成单：1826单" />
-                            <TextView style="@style/MerchantItemText3"
-                                      android:text="月成单：112单"/>
+                                      android:text="单价：0.0095元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="报价时间：2/25 16:30"/>
+                                          android:text="现货"/>
+                                <TextView style="@style/MerchantItemText4"
+                                          android:text="有图"/>
                             </LinearLayout>
+                            <TextView style="@style/MerchantItemText3"
+                                      android:text="报价时间：2/25 16:30"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
                                   android:text="96.7分"/>
@@ -136,15 +140,17 @@
                             <TextView style="@style/MerchantItemText1"
                                       android:text="壹衣辅料大卖场" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="年成单：1826单" />
-                            <TextView style="@style/MerchantItemText3"
-                                      android:text="月成单：112单"/>
+                                      android:text="单价：0.0095元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
                                 <TextView style="@style/MerchantItemText3"
-                                          android:text="报价时间：2/25 16:30"/>
+                                          android:text="8000个 补货：3天"/>
+                                <TextView style="@style/MerchantItemText4"
+                                          android:text="有图"/>
                             </LinearLayout>
+                            <TextView style="@style/MerchantItemText3"
+                                      android:text="报价时间：2/25 16:30"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
                                   android:text="96.7分"/>
