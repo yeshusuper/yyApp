@@ -1,5 +1,6 @@
 package com.fuliaohui.yy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -48,7 +49,7 @@ public class MerchantListActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: 2017/3/25 跳转到地图
+                startActivity(new Intent(MerchantListActivity.this, PlaceActivity.class));
             }
         };
         int[] placeIds = new int[]{ R.id.tv_place_1, R.id.tv_place_2, R.id.tv_place_3 };

@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fuliaohui.yy.MerchantListActivity;
 import com.fuliaohui.yy.OrderDetailActivity;
 import com.fuliaohui.yy.ProductDetailActivity;
 import com.fuliaohui.yy.PublishProductActivity;
@@ -65,6 +66,45 @@ public class CaigouListFragment extends Fragment {
         for (int i = 0; i < productIds.length; i++) {
             view.findViewById(productIds[i]).setOnClickListener(i < 4 ? listener : listener2);
         }
+        View.OnClickListener listener3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getContext().startActivity(new Intent(getContext(), MerchantListActivity.class));
+            }
+        };
+        int[] merchantIds = new int[] { R.id.cb_merchant_1, R.id.cb_merchant_2, R.id.cb_merchant_3 };
+        for (int merchantId : merchantIds) {
+            view.findViewById(merchantId).setOnClickListener(listener3);
+        }
+        View.OnClickListener listener4 = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到聊天
+            }
+        };
+        int[] talkIds = new int[] { R.id.cb_talk_1, R.id.cb_talk_2, R.id.cb_talk_3, R.id.cb_talk_4 };
+        for (int talkId : talkIds) {
+            view.findViewById(talkId).setOnClickListener(listener4);
+        }
+
+        view.findViewById(R.id.cb_evaluate_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到评价
+            }
+        });
+        view.findViewById(R.id.cb_pay_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到支付
+            }
+        });
+        view.findViewById(R.id.cb_tender_1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: 2017/3/25 跳转到竞标列表
+            }
+        });
 
         return view;
     }

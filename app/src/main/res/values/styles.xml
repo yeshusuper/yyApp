@@ -323,15 +323,14 @@
     <style name="CaigouListItemOpBtn">
         <item name="android:layout_width">66dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:button">@null</item>
-        <item name="android:background">@drawable/selecter_right_class_select</item>
+        <item name="android:background">@drawable/shape_right_class_select_nor</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/black_555555</item>
         <item name="android:textSize">@dimen/font_27</item>
     </style>
     <style name="CaigouListItemOpBtn.Current">
-        <item name="android:checked">true</item>
+        <item name="android:background">@drawable/shape_right_class_select_nor</item>
         <item name="android:textColor">@color/red_e82c1d</item>
     </style>
     

@@ -43,6 +43,11 @@
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:launchMode="singleTop"/>
 
+        <activity android:name=".PlaceActivity"
+                  android:theme="@style/ActivityTheme"
+                  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:launchMode="singleTop"/>
+
     </application>
 
 </manifest>

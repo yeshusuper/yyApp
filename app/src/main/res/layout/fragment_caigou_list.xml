@@ -98,7 +98,8 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_merchant_1"
                             android:text="主营商家"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -127,9 +128,11 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_tender_1"
                             android:text="5个竞标"/>
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_merchant_2"
                             android:text="主营商家"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -166,9 +169,11 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_merchant_3"
                             android:text="主营商家"/>
-                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                        <TextView style="@style/CaigouListItemOpBtn.Current"
+                                  android:id="@+id/cb_pay_1"
                             android:text="付款"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -205,7 +210,8 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_talk_1"
                             android:text="联系商家"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -241,9 +247,10 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_talk_2"
                             android:text="联系商家"/>
-                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                        <TextView style="@style/CaigouListItemOpBtn.Current"
                             android:text="确认收货"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -279,9 +286,11 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_talk_3"
                             android:text="联系商家"/>
-                        <CheckBox style="@style/CaigouListItemOpBtn.Current"
+                        <TextView style="@style/CaigouListItemOpBtn.Current"
+                                  android:id="@+id/cb_evaluate_1"
                             android:text="评价"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -317,7 +326,8 @@
                     </LinearLayout>
                     <TextView style="@style/LineX_b2b2b2" />
                     <LinearLayout style="@style/CaigouListItemOp">
-                        <CheckBox style="@style/CaigouListItemOpBtn"
+                        <TextView style="@style/CaigouListItemOpBtn"
+                                  android:id="@+id/cb_talk_4"
                             android:text="联系商家"/>
                     </LinearLayout>
                 </LinearLayout>
