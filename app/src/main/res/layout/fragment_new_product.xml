@@ -39,11 +39,11 @@
                     android:src="@drawable/new_product_img_1"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
                     <TextView style="@style/NewProductItemText1"
-                        android:text="壹衣辅料大卖场" />
+                        android:text="广州轻纺城" />
                     <TextView style="@style/NewProductItemText2"
-                        android:text="辅料/纽扣/塑料扣" />
+                        android:text="辅料/珠饰/珠片" />
                     <TextView style="@style/NewProductItemText3"
-                        android:text="复古塑料纽扣..."/>
+                        android:text="新款：新模具 颜色齐全"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -54,11 +54,11 @@
                     android:src="@drawable/new_product_img_2"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
                     <TextView style="@style/NewProductItemText1"
-                        android:text="壹衣辅料大卖场" />
+                        android:text="广州九州轻纺城" />
                     <TextView style="@style/NewProductItemText2"
-                        android:text="辅料/纽扣/塑料扣" />
+                        android:text="辅料/珠饰/仿珍珠" />
                     <TextView style="@style/NewProductItemText3"
-                        android:text="复古塑料纽扣..."/>
+                        android:text="新款：新模具 光泽特好"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -69,11 +69,11 @@
                     android:src="@drawable/new_product_img_3"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
                     <TextView style="@style/NewProductItemText1"
-                        android:text="壹衣辅料大卖场" />
+                        android:text="广州九州轻纺城" />
                     <TextView style="@style/NewProductItemText2"
-                        android:text="辅料/纽扣/塑料扣" />
+                        android:text="辅料/钻饰/双孔压克力" />
                     <TextView style="@style/NewProductItemText3"
-                        android:text="复古塑料纽扣..."/>
+                        android:text="新款：新工艺 金粉 规格齐全"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -84,11 +84,11 @@
                     android:src="@drawable/new_product_img_4"/>
                 <LinearLayout style="@style/NewProductItemTextContainer">
                     <TextView style="@style/NewProductItemText1"
-                        android:text="壹衣辅料大卖场" />
+                        android:text="广州长江辅料城" />
                     <TextView style="@style/NewProductItemText2"
-                        android:text="辅料/纽扣/塑料扣" />
+                        android:text="辅料/钻饰/爪钻" />
                     <TextView style="@style/NewProductItemText3"
-                        android:text="复古塑料纽扣..."/>
+                        android:text="新款：新工艺 不割线"/>
                 </LinearLayout>
             </LinearLayout>
 

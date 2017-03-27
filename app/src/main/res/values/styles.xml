@@ -84,6 +84,8 @@
         <item name="android:layout_height">20dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/black_555555</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:textSize">@dimen/font_30</item>
     </style>
 
@@ -131,6 +133,8 @@
         <item name="android:textColor">@color/black_555555</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/font_45</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <style name="NewProductItemText2">
         <item name="android:layout_width">wrap_content</item>
@@ -138,6 +142,8 @@
         <item name="android:textColor">@color/black_555555</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:textSize">@dimen/font_36</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <style name="NewProductItemText3">
         <item name="android:layout_width">wrap_content</item>
@@ -145,6 +151,8 @@
         <item name="android:gravity">bottom</item>
         <item name="android:textColor">@color/gray_999999</item>
         <item name="android:textSize">@dimen/font_30</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
     <style name="MerchantItemContainer" parent="NewProductItemContainer">

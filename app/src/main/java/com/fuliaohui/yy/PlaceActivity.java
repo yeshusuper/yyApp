@@ -18,7 +18,7 @@ public class PlaceActivity extends AppCompatActivity {
         setContentView(R.layout.actvitiy_place);
 
         TitleBar titleBar = (TitleBar) findViewById(R.id.title_bar);
-        titleBar.setTitle("壹衣辅料大卖场导航");
+        titleBar.setTitle("炳和生商家导航");
         titleBar.setActivity(this);
 
         final View place1 = findViewById(R.id.iv_place_1);

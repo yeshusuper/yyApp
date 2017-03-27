@@ -87,7 +87,7 @@
                         android:src="@drawable/main_img_1"/>
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="编制花边"/>
+                        android:text="盘花花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -99,7 +99,7 @@
                         android:src="@drawable/main_img_2" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="钩编花边"/>
+                        android:text="水溶花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -111,7 +111,7 @@
                         android:src="@drawable/main_img_3" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="经编花边"/>
+                        android:text="彩色花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -129,7 +129,7 @@
                         android:src="@drawable/main_img_4" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="刺绣花边"/>
+                        android:text="车骨花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -141,7 +141,7 @@
                         android:src="@drawable/main_img_5" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="手工钩针花边"/>
+                        android:text="亮片花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -153,7 +153,7 @@
                         android:src="@drawable/main_img_6" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="其他花边"/>
+                        android:text="蕾丝花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -171,7 +171,7 @@
                         android:src="@drawable/main_img_7" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="爱尔兰花边"/>
+                        android:text="激光花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -183,7 +183,7 @@
                         android:src="@drawable/main_img_8" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="手工钩针花边"/>
+                        android:text="手摇/手勾花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -195,7 +195,7 @@
                         android:src="@drawable/main_img_9" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="经编弹力花边"/>
+                        android:text="彩色花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
@@ -213,12 +213,13 @@
                         android:src="@drawable/main_img_10" />
 
                     <TextView style="@style/MainRightItemText"
-                        android:text="其他花边"/>
+                        android:text="彩色花边"/>
                 </LinearLayout>
 
                 <TextView style="@style/MainRightItemGap" />
 
                 <LinearLayout
+                    android:visibility="invisible"
                     android:id="@+id/ll_class_11"
                     style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
@@ -231,6 +232,7 @@
                 <TextView style="@style/MainRightItemGap" />
 
                 <LinearLayout
+                    android:visibility="invisible"
                     android:id="@+id/ll_class_12"
                     style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"

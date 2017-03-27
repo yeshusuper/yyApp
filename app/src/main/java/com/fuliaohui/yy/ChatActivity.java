@@ -33,7 +33,7 @@ public class ChatActivity extends AppCompatActivity {
         int type = getIntent().getIntExtra("type", 0);
 
         TitleBar titleBar = (TitleBar) findViewById(R.id.title_bar);
-        titleBar.setTitle(type == 0 ? "壹衣辅料大卖场" : "客服");
+        titleBar.setTitle(type == 0 ? "中大：万绣莊花边" : "客服");
         titleBar.setActivity(this);
 
         View llQuiteProductContainer = findViewById(R.id.ll_quick_product_container);

@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/new_product_detail_img_1"
+                    android:src="@drawable/new_product_detail_img_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -49,14 +49,14 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                         android:text="商户：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                        android:text="壹衣辅料大卖场" />
+                        android:text="裕隆" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
                         android:text="分类：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                        android:text="辅料/纽扣/塑料扣" />
+                        android:text="辅料/钻饰/双孔压克力钻" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine"
@@ -93,7 +93,7 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                         android:text="描述：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                        android:text="复古塑料纽扣，2017最新款，4洞，新工艺爆款" />
+                        android:text="春天系列压克力钻：金粉效果，规格齐全" />
                 </LinearLayout>
             </LinearLayout>
             <TextView style="@style/LineX_b2b2b2" />

@@ -47,17 +47,23 @@
                     android:id="@+id/ll_detail_1"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
-                               android:src="@drawable/new_product_img_1"/>
+                               android:src="@drawable/tender_img_1"/>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <LinearLayout style="@style/MerchantItemTextContainer">
                             <TextView style="@style/MerchantItemText1"
-                                      android:text="壹衣辅料大卖场" />
+                                      android:text="中大：捷顺珠饰" />
                             <TextView style="@style/MerchantItemText2"
                                       android:text="单价：0.0095元/个" />
-                            <TextView style="@style/MerchantItemText3"
-                                      android:text="订做：7天"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView style="@style/MerchantItemText3"
+                                    android:text="订做：7天"/>
+                                <TextView style="@style/MerchantItemText4"
+                                    android:text="有图"/>
+                            </LinearLayout>
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -74,15 +80,15 @@
                     android:id="@+id/ll_detail_2"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
-                               android:src="@drawable/new_product_img_1"/>
+                               android:src="@drawable/tender_img_2"/>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <LinearLayout style="@style/MerchantItemTextContainer">
                             <TextView style="@style/MerchantItemText1"
-                                      android:text="壹衣辅料大卖场" />
+                                      android:text="中大：通达珠饰" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="单价：0.0095元/个" />
+                                      android:text="单价：0.0096元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -92,10 +98,10 @@
                                       android:text="有图"/>
                             </LinearLayout>
                             <TextView style="@style/MerchantItemText3"
-                                      android:text="报价时间：2/25 16:30"/>
+                                      android:text="报价时间：2/25 16:28"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
-                                  android:text="96.7分"/>
+                                  android:text="95.9分"/>
                         <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>
@@ -103,15 +109,15 @@
                     android:id="@+id/ll_detail_3"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
-                               android:src="@drawable/new_product_img_1"/>
+                               android:src="@drawable/tender_img_3"/>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <LinearLayout style="@style/MerchantItemTextContainer">
                             <TextView style="@style/MerchantItemText1"
-                                      android:text="壹衣辅料大卖场" />
+                                      android:text="中大：洲发珠饰" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="单价：0.0095元/个" />
+                                      android:text="单价：0.0096元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -121,10 +127,10 @@
                                           android:text="有图"/>
                             </LinearLayout>
                             <TextView style="@style/MerchantItemText3"
-                                      android:text="报价时间：2/25 16:30"/>
+                                      android:text="报价时间：2/25 16:49"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
-                                  android:text="96.7分"/>
+                                  android:text="93.5分"/>
                         <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>
@@ -132,15 +138,15 @@
                     android:id="@+id/ll_detail_4"
                     style="@style/MerchantItemContainer">
                     <ImageView style="@style/MerchantItemImg"
-                               android:src="@drawable/new_product_img_1"/>
+                               android:src="@drawable/tender_img_4"/>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
                         <LinearLayout style="@style/MerchantItemTextContainer">
                             <TextView style="@style/MerchantItemText1"
-                                      android:text="壹衣辅料大卖场" />
+                                      android:text="中大：哈伦珠饰" />
                             <TextView style="@style/MerchantItemText2"
-                                      android:text="单价：0.0095元/个" />
+                                      android:text="单价：0.009元/个" />
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -150,10 +156,41 @@
                                           android:text="有图"/>
                             </LinearLayout>
                             <TextView style="@style/MerchantItemText3"
-                                      android:text="报价时间：2/25 16:30"/>
+                                      android:text="报价时间：2/25 15:30"/>
                         </LinearLayout>
                         <TextView style="@style/MerchantTenderItemText4"
-                                  android:text="96.7分"/>
+                                  android:text="93.2分"/>
+                        <TextView style="@style/MerchantTenderItemDetail"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_detail_5"
+                    style="@style/MerchantItemContainer">
+                    <ImageView style="@style/MerchantItemImg"
+                        android:src="@drawable/tender_img_5"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout style="@style/MerchantItemTextContainer">
+                            <TextView style="@style/MerchantItemText1"
+                                android:text="中大：联达珠饰" />
+                            <TextView style="@style/MerchantItemText2"
+                                android:text="单价：0.0091元/个" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView style="@style/MerchantItemText3"
+                                    android:text="6000个 补货：2天"/>
+                                <TextView style="@style/MerchantItemText4"
+                                    android:text="有图"/>
+                            </LinearLayout>
+                            <TextView style="@style/MerchantItemText3"
+                                android:text="报价时间：2/25 17:01"/>
+                        </LinearLayout>
+                        <TextView style="@style/MerchantTenderItemText4"
+                            android:text="93.0分"/>
                         <TextView style="@style/MerchantTenderItemDetail"/>
                     </RelativeLayout>
                 </LinearLayout>

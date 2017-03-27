@@ -20,7 +20,7 @@ public class MerchantListActivity extends AppCompatActivity {
         setContentView(R.layout.actvitiy_merchant_list);
 
         TitleBar titleBar = (TitleBar) findViewById(R.id.title_bar);
-        titleBar.setTitle("主营商家");
+        titleBar.setTitle("主营水溶花边商家");
         titleBar.setActivity(this);
 
         final View selectItems = findViewById(R.id.ll_select_items);
@@ -52,7 +52,8 @@ public class MerchantListActivity extends AppCompatActivity {
                 startActivity(new Intent(MerchantListActivity.this, PlaceActivity.class));
             }
         };
-        int[] placeIds = new int[]{ R.id.tv_place_1, R.id.tv_place_2, R.id.tv_place_3 };
+        int[] placeIds = new int[]{ R.id.tv_place_1, R.id.tv_place_2, R.id.tv_place_3, R.id.tv_place_4,
+            R.id.tv_place_5, R.id.tv_place_6, R.id.tv_place_7, R.id.tv_place_8 };
         for (int i = 0; i < placeIds.length; i++) {
             findViewById(placeIds[i]).setOnClickListener(listener);
         }

@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
                 android:hint="请输入手机号"
+                android:text="15915950895"
                 android:textColorHint="@color/gray_cccccc"
                 android:textSize="@dimen/font_33"
                 android:paddingLeft="13dp"
@@ -61,6 +62,7 @@
                     android:textSize="@dimen/font_33"
                     android:paddingLeft="13dp"
                     android:paddingRight="13dp"
+                    android:text="888888"
                     />
 
                 <TextView style="@style/LineY_dddddd" />
@@ -111,6 +113,7 @@
                 android:textSize="@dimen/font_33"
                 android:paddingLeft="13dp"
                 android:paddingRight="13dp"
+                android:text="潘生"
                 />
 
             <Button

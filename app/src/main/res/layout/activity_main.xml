@@ -33,12 +33,12 @@
             <CheckBox
                 android:id="@+id/cb_mianliao"
                 style="@style/MainTopNavItem"
-                android:text="面料"/>
+                android:text="面料类"/>
             <TextView style="@style/LineY" />
             <CheckBox
                 android:id="@+id/cb_fuliao"
                 style="@style/MainTopNavItem"
-                android:text="辅料" />
+                android:text="辅料类" />
             <TextView style="@style/LineY" />
             <CheckBox
                 android:id="@+id/cb_new"

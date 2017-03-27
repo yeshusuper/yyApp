@@ -72,19 +72,19 @@
                     style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_1"/>
+                            android:src="@drawable/caigou_img_1"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="辅料：水溶花边"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="10000个"/>
+                                    android:text="90码"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="未限价" />
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限制7天内交货" />
+                                    android:text="未限制交货时间" />
                             </LinearLayout>
                             <TextView
                                 android:layout_alignParentRight="true"
@@ -106,21 +106,20 @@
 
                 <LinearLayout
                     android:id="@+id/ll_product_2"
-                    style="@style/CaigouListItemLine"
-                    tools:visibility="gone">
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_2"/>
+                            android:src="@drawable/caigou_img_2"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="辅料/珠饰：仿珍珠"/>
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="10000个"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="限价0.01元/个" />
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="限制7天内交货" />
                             </LinearLayout>
@@ -139,21 +138,20 @@
 
                 <LinearLayout
                     android:id="@+id/ll_product_3"
-                    style="@style/CaigouListItemLine"
-                    tools:visibility="gone">
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_3"/>
+                            android:src="@drawable/caigou_img_3"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="布料：汗布"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="10000个"/>
+                                    android:text="30米"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="限价7.5元/米" />
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="限制7天内交货" />
                             </LinearLayout>
@@ -180,21 +178,20 @@
 
                 <LinearLayout
                     android:id="@+id/ll_product_4"
-                    style="@style/CaigouListItemLine"
-                    tools:visibility="gone">
+                    style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_4"/>
+                            android:src="@drawable/caigou_img_4"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="布料：罗马布"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="10000个"/>
+                                    android:text="50米"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="限价42元/米" />
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="限制7天内交货" />
                             </LinearLayout>
@@ -221,17 +218,17 @@
                     style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_5"/>
+                            android:src="@drawable/caigou_img_5"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="辅料/织带：松紧带"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="10000个"/>
+                                    android:text="300米"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="限价3元/米" />
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="限制7天内交货" />
                             </LinearLayout>
@@ -260,17 +257,17 @@
                     style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_5"/>
+                            android:src="@drawable/caigou_img_6"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                             <LinearLayout style="@style/CaigouListItemInfo">
                                 <TextView style="@style/CaigouListItemInfoTitle"
-                                    android:text="复古塑料纽扣"/>
+                                    android:text="布料：牛仔布"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="10000个"/>
+                                    android:text="40米"/>
                                 <TextView style="@style/CaigouListItemInfoText"
-                                    android:text="限价0.01元" />
+                                    android:text="限价18元/米" />
                                 <TextView style="@style/CaigouListItemInfoText"
                                     android:text="限制7天内交货" />
                             </LinearLayout>
@@ -300,7 +297,7 @@
                     style="@style/CaigouListItemLine">
                     <LinearLayout style="@style/CaigouListItemContent">
                         <ImageView style="@style/CaigouListItemImg"
-                            android:src="@drawable/new_product_img_5"/>
+                            android:src="@drawable/caigou_img_7"/>
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">

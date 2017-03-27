@@ -20,7 +20,7 @@ public class TenderListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tender_list);
 
         TitleBar titleBar = (TitleBar) findViewById(R.id.title_bar);
-        titleBar.setTitle("主营商家");
+        titleBar.setTitle("竞标商家");
         titleBar.setActivity(this);
 
         final View selectItems = findViewById(R.id.ll_select_items);
