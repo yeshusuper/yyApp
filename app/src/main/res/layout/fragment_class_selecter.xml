@@ -189,6 +189,7 @@
                 <TextView style="@style/MainRightItemGap" />
 
                 <LinearLayout
+                    android:visibility="invisible"
                     android:id="@+id/ll_class_9"
                     style="@style/MainRightItemContainer">
                     <ImageView style="@style/MainRightItemImage"
@@ -200,49 +201,6 @@
 
                 <TextView style="@style/MainRightItemGap" />
 
-            </LinearLayout>
-
-            <LinearLayout style="@style/MainRightItemLineContainer">
-
-                <TextView style="@style/MainRightItemGap" />
-
-                <LinearLayout
-                    android:id="@+id/ll_class_10"
-                    style="@style/MainRightItemContainer">
-                    <ImageView style="@style/MainRightItemImage"
-                        android:src="@drawable/main_img_10" />
-
-                    <TextView style="@style/MainRightItemText"
-                        android:text="彩色花边"/>
-                </LinearLayout>
-
-                <TextView style="@style/MainRightItemGap" />
-
-                <LinearLayout
-                    android:visibility="invisible"
-                    android:id="@+id/ll_class_11"
-                    style="@style/MainRightItemContainer">
-                    <ImageView style="@style/MainRightItemImage"
-                        android:src="@drawable/main_img_3" />
-
-                    <TextView style="@style/MainRightItemText"
-                        android:text="经编花边"/>
-                </LinearLayout>
-
-                <TextView style="@style/MainRightItemGap" />
-
-                <LinearLayout
-                    android:visibility="invisible"
-                    android:id="@+id/ll_class_12"
-                    style="@style/MainRightItemContainer">
-                    <ImageView style="@style/MainRightItemImage"
-                        android:src="@drawable/main_img_5" />
-
-                    <TextView style="@style/MainRightItemText"
-                        android:text="手工钩针花边"/>
-                </LinearLayout>
-
-                <TextView style="@style/MainRightItemGap" />
             </LinearLayout>
 
         </LinearLayout>

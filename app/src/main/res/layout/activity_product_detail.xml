@@ -18,11 +18,10 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                tools:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/new_product_detail_img_1"
+                    android:src="@drawable/caigou_big_img"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -55,14 +54,14 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="分类：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="辅料/纽扣/塑料扣" />
+                              android:text="辅料/花边/水溶花边" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="描述：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="复古塑料纽扣" />
+                              android:text="水溶花边" />
                     <TextView
                         android:layout_marginLeft="10dp"
                         android:layout_width="wrap_content"
@@ -106,7 +105,7 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="采购量：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="10000个" />
+                              android:text="90码" />
                 </LinearLayout>
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
@@ -127,14 +126,14 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="限价：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="0.07元/个" />
+                              android:text="未限制" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="限天：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="7天内" />
+                              android:text="未限制" />
                 </LinearLayout>
             </LinearLayout>>
             <TextView style="@style/LineX_b2b2b2" />

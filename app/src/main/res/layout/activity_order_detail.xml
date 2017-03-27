@@ -18,11 +18,10 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                tools:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/new_product_detail_img_1"
+                    android:src="@drawable/new_product_detail_img_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"

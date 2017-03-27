@@ -37,48 +37,6 @@
                     android:layout_height="wrap_content">
                     <ImageView
                         android:background="@drawable/shape_pub_product_img_border"
-                        android:src="@drawable/pub_product_img_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true" />
-                    <ImageView
-                        android:layout_marginTop="2dp"
-                        android:layout_marginRight="2dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentTop="true"
-                        android:src="@drawable/pub_product_img_del"
-                        android:layout_width="17dp"
-                        android:layout_height="17dp" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:background="@drawable/shape_pub_product_img_border"
-                        android:src="@drawable/pub_product_img_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true" />
-                    <ImageView
-                        android:layout_marginTop="2dp"
-                        android:layout_marginRight="2dp"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentTop="true"
-                        android:src="@drawable/pub_product_img_del"
-                        android:layout_width="17dp"
-                        android:layout_height="17dp" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:background="@drawable/shape_pub_product_img_border"
                         android:src="@drawable/pub_product_img_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -101,6 +59,50 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true" />
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/shape_pub_product_img_border"
+                        android:src="@drawable/pub_product_img_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true" />
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/pub_product_img_del"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="invisible"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/shape_pub_product_img_border"
+                        android:src="@drawable/pub_product_img_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true" />
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/pub_product_img_del"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp" />
+                </RelativeLayout>
 
             </LinearLayout>
 

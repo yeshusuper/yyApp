@@ -46,7 +46,7 @@ public class TenderListActivity extends AppCompatActivity {
                 startActivity(new Intent(TenderListActivity.this, TenderDetailActivity.class));
             }
         };
-        int[] detailIds = new int[]{ R.id.ll_detail_1, R.id.ll_detail_2, R.id.ll_detail_3, R.id.ll_detail_4 };
+        int[] detailIds = new int[]{ R.id.ll_detail_1, R.id.ll_detail_2, R.id.ll_detail_3, R.id.ll_detail_4, R.id.ll_detail_5 };
         for (int detailId : detailIds) {
             findViewById(detailId).setOnClickListener(listener);
         }

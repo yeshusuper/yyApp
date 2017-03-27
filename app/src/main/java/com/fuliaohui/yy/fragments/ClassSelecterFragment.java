@@ -28,7 +28,7 @@ public class ClassSelecterFragment extends Fragment {
             }
         };
 
-        int[] classIds = new int[]{ R.id.ll_class_1, R.id.ll_class_2, R.id.ll_class_3, R.id.ll_class_4, R.id.ll_class_5, R.id.ll_class_6, R.id.ll_class_7, R.id.ll_class_8, R.id.ll_class_9, R.id.ll_class_10, R.id.ll_class_11, R.id.ll_class_12 };
+        int[] classIds = new int[]{ R.id.ll_class_1, R.id.ll_class_2, R.id.ll_class_3, R.id.ll_class_4, R.id.ll_class_5, R.id.ll_class_6, R.id.ll_class_7, R.id.ll_class_8, R.id.ll_class_9 };
         for (int i = 0; i < classIds.length; i++) {
             view.findViewById(classIds[i]).setOnClickListener(listener);
         }

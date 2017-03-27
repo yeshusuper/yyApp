@@ -18,11 +18,10 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <RelativeLayout
-                tools:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:src="@drawable/new_product_detail_img_1"
+                    android:src="@drawable/tender_big_img"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -55,14 +54,14 @@
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="商户：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="壹衣辅料大卖场" />
+                              android:text="中大：捷顺珠饰" />
                 </LinearLayout>
 
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
                               android:text="单价：" />
                     <TextView style="@style/NewProductDetailInfoContent"
-                              android:text="0.01元/个" />
+                              android:text="0.0095元/个" />
                 </LinearLayout>
                 <LinearLayout style="@style/NewProductDetailInfoLine">
                     <TextView style="@style/NewProductDetailInfoTitle"
